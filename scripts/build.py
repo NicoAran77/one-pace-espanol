@@ -146,11 +146,22 @@ def parse_site():
         if options:
             res = 1080 if 1080 in options else max(options)
             lists[kind].append((res, options[res]))
+    # Listas en ingles, para los episodios que aun no tienen espanol.
+    english = fetch("https://onepace.net/en/watch").decode("utf-8", "replace")
+    lists["en"] = []
+    for body in re.findall(r'<span id="[^"]*"[^>]*>English Subtitles</span><ul role="list"[^>]*>(.*?)</ul>', english, re.S):
+        options = {}
+        for list_id, res in re.findall(
+                r'pixeldrain\.[a-z]+/l/([A-Za-z0-9]+)".*?<span[^>]*>(\d+)p</span>', body, re.S):
+            options[int(res)] = list_id
+        if options:
+            res = 1080 if 1080 in options else max(options)
+            lists["en"].append((res, options[res]))
     return current, lists
 
 
 def parse_pixeldrain(lists):
-    found = {"sub": {}, "dub": {}}
+    found = {"sub": {}, "dub": {}, "en": {}}
 
     def one(item):
         kind, (res, list_id) = item
@@ -267,7 +278,7 @@ def spanish_files(subs_repo):
             for name in os.listdir(ep_dir):
                 if re.search(r"\bdub\b", name, re.I):
                     continue
-                lang = re.search(r" (es-419|es)\.ass$", name)
+                lang = re.search(r" (es-419|es|en)\.ass$", name)
                 if not lang:
                     continue
                 if m.group(1).startswith("Cover Stories"):
@@ -384,8 +395,8 @@ def merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current, titl
     return videos, torrents
 
 
-def torrent_streams(entries, current, spanish):
-    """Los subtitulos en espanol siguen la edicion actual: solo van con torrents actuales."""
+def torrent_streams(entries, current, spanish, english):
+    """Los subtitulos propios siguen la edicion actual: solo van con torrents actuales."""
     unique = {}
     for s in entries:
         unique.setdefault((s["infoHash"].lower(), s.get("fileIdx")), s)
@@ -399,10 +410,14 @@ def torrent_streams(entries, current, spanish):
         quality = f"Torrent {res.group(1)}p" if res else "Torrent"
         subs = [x for x in s.get("subtitles", []) if x.get("lang") == "eng"]
         if ih in current:
-            note = "Español: elige «Español» en subtítulos" if spanish else "Sin subtítulos en español del addon"
-            subs = spanish + subs
+            if spanish:
+                note = "Español: elige «Español» en subtítulos"
+                subs = spanish + subs
+            else:
+                subs = english or subs
+                note = "Aún sin español: subtítulos en inglés" if subs else "Aún sin español"
         else:
-            note = "Edición antigua, sin subtítulos en español"
+            note = "Edición antigua: subtítulos en inglés" if subs else "Edición antigua"
         stream = {
             "name": "One Pace\nTorrent",
             "title": f"{quality}\n{note}",
@@ -446,7 +461,7 @@ def main(subs_repo, out):
         shutil.rmtree(os.path.join(out, folder), ignore_errors=True)
     os.makedirs(os.path.join(out, "subs"))
 
-    published, report = [], {"desincronizados": [], "sin_referencia": [], "sin_video": []}
+    published, report = [], {"desincronizados": [], "sin_referencia": [], "sin_video": [], "solo_ingles": [], "sin_ingles": []}
     with_es = with_pixeldrain = 0
     for vid, video in videos.items():
         subtitles = []
@@ -469,11 +484,30 @@ def main(subs_repo, out):
             subtitles.append({"id": f"{vid}_{lang}", "lang": "spa", "url": f"{BASE_URL}/subs/{vid}_{lang}.srt"})
             break  # una sola opcion: la latina si existe, si no la de Espana
 
-        streams = torrent_streams(torrents.get(vid, []), current, subtitles)
+        # Los subtitulos propios solo se ofrecen con un torrent de la edicion actual.
+        fresh_torrent = any(s["infoHash"].lower() in current for s in torrents.get(vid, []))
+        has_spanish = (bool(subtitles) and fresh_torrent) or vid in pixeldrain["sub"]
+        english_subs = []
+        en_path = es_files.get(vid, {}).get("en")
+        if not has_spanish and en_path:
+            events = parse_ass(en_path)
+            if events:
+                with open(os.path.join(out, "subs", f"{vid}_en.srt"), "w", encoding="utf-8", newline="\n") as f:
+                    f.write(to_srt(events))
+                english_subs = [{"id": f"{vid}_en", "lang": "eng", "url": f"{BASE_URL}/subs/{vid}_en.srt"}]
+
+        streams = torrent_streams(torrents.get(vid, []), current, subtitles, english_subs)
         if vid in pixeldrain["sub"]:
             streams.append(http_stream(pixeldrain["sub"][vid], "Subtítulos latinos incluidos en el video", "onepace-es-sub"))
         if vid in pixeldrain["dub"]:
             streams.append(http_stream(pixeldrain["dub"][vid], "Doblaje latino", "onepace-es-dub"))
+        if not has_spanish and vid in pixeldrain["en"]:
+            streams.append(http_stream(pixeldrain["en"][vid], "Aún sin español: subtítulos en inglés incluidos en el video", "onepace-en-sub"))
+        if streams and not has_spanish:
+            report["solo_ingles"].append(vid)
+            if not english_subs and vid not in pixeldrain["en"] and not any(
+                    x.get("lang") == "eng" for s in streams for x in s.get("subtitles", [])):
+                report["sin_ingles"].append(vid)
         if not streams:
             report["sin_video"].append(vid)
             continue
@@ -524,7 +558,7 @@ def main(subs_repo, out):
     write_json(out, "catalog/series/onepace-es.json", {"metas": [
         {k: meta[k] for k in ("id", "type", "name", "poster", "background", "logo", "description", "genres")}]})
     write_json(out, "manifest.json", {
-        "id": "io.github.nicoaran77.onepace.es", "version": "1.3.0",
+        "id": "io.github.nicoaran77.onepace.es", "version": "1.3.1",
         "name": "One Pace en español",
         "description": "One Pace por sagas, con subtítulos oficiales en español y doblaje latino cuando existen. "
                        "Ve a Descubrir → Series → One Pace en español.",
