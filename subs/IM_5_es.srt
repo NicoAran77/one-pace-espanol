@@ -1402,486 +1402,478 @@ Y por supuesto, vamos a quitarles el abrigo a los prisioneros...
 Le quitaron el abrigo...
 
 345
-00:25:25,750 --> 00:25:28,510
-Le quitaron el abrigo...
-
-346
 00:25:28,510 --> 00:25:29,710
 ¡¿Qué?!
 
-347
+346
 00:25:32,840 --> 00:25:35,100
 ¡Bueno, cuídese!
 
-348
+347
 00:25:35,100 --> 00:25:39,110
 ¡Y recuerde, los Den Den Mushi no funcionan con este frío!
 
-349
+348
 00:25:39,110 --> 00:25:40,600
 ¡Tenga cuidado!
 
-350
+349
 00:25:45,650 --> 00:25:47,660
 ¡¿Qué?!
 
-351
+350
 00:25:47,660 --> 00:25:51,470
 N-No puedo... controlar mis manos con este frío...
 
-352
+351
 00:25:51,470 --> 00:25:54,670
 ¡Qué frío! ¡Está tan frío que duele!
 
-353
+352
 00:25:54,670 --> 00:25:56,930
 ¡S-Sólo un poco más...!
 
-354
+353
 00:25:57,950 --> 00:25:59,260
 ¡Conseguí quitarlos!
 
-355
+354
 00:25:59,260 --> 00:26:01,590
 ¡Lo hiciste!
 
-356
+355
 00:26:04,480 --> 00:26:07,290
 Son 1, 2, 3, 4...
 
-357
+356
 00:26:07,290 --> 00:26:10,860
 Oye, no s-serán esos los Lobos Guardianes, ¿verdad?
 
-358
+357
 00:26:10,860 --> 00:26:14,940
 ¿Sabes p-por qué esas cosas no están en el Piso de las Bestias Malditas?
 
-359
+358
 00:26:14,940 --> 00:26:16,290
 No, ¿por qué?
 
-360
+359
 00:26:16,600 --> 00:26:18,750
 Y-Yo lo sé...
 
-361
+360
 00:26:18,750 --> 00:26:23,360
 ¡Es p-porque si los soltaran en el Nivel Dos,
 se comerían al Basilisco, a Sphinx y al resto de bestias!
 
-362
+361
 00:26:23,360 --> 00:26:24,750
 ¡¿Tan fuertes son?!
 
-363
+362
 00:26:24,750 --> 00:26:28,820
 ¡¿Entonces están en un nivel superior de salvajismo?!
 
-364
+363
 00:26:29,630 --> 00:26:32,870
 ¡Primero nos quitan los abrigos y nos hacen sufrir este frío,
 ¿y ahora tenemos que enfrentarnos a un ejército de lobos?!
 
-365
+364
 00:26:32,870 --> 00:26:35,960
 Ahora tiemblo incluso más que antes...
 
-366
+365
 00:26:35,960 --> 00:26:38,950
 ¡Entonces preparémonos para enfrentarnos a ellos!
 
-367
+366
 00:26:38,950 --> 00:26:41,480
 ¡Vamos a salvar a Mugi-chan!
 
-368
+367
 00:26:45,050 --> 00:26:48,220
 ¡Yo no quiero que me coman, maldición!
 
-369
+368
 00:26:48,220 --> 00:26:51,660
 ¡¿Ya están huyendo?!
 
-370
+369
 00:27:09,660 --> 00:27:12,300
 Es un tipo bastante extraño...
 
-371
+370
 00:27:12,300 --> 00:27:15,850
 ¿Quieren que les digamos la hora de la muerte o algo?
 
-372
+371
 00:27:18,400 --> 00:27:20,090
 Duele...
 
-373
+372
 00:27:27,750 --> 00:27:30,490
 ¡Quiero salvar a Ace!
 
-374
+373
 00:27:30,490 --> 00:27:34,660
 Es tan absurdo como una hormiga enfrentándose a una tormenta.
 
-375
+374
 00:27:34,660 --> 00:27:39,090
 Podrían acabar contigo sin darte una sola oportunidad.
 
-376
+375
 00:27:53,050 --> 00:27:55,170
 Deja de malgastar energía.
 
-377
+376
 00:27:55,170 --> 00:27:58,480
 Con todo ese veneno, te espera una muerte segura.
 
-378
+377
 00:27:58,480 --> 00:28:01,900
 Ya no ves, ¿cierto?
 
-379
-00:28:01,900 --> 00:28:01,970
-¿Puedes oírme?
-
-380
+378
 00:28:01,970 --> 00:28:04,090
 Acepta tu muerte de una vez.
 
-381
+379
 00:28:04,510 --> 00:28:06,660
 ¡Imposible! ¡No moriré!
 
-382
+380
 00:28:07,760 --> 00:28:10,570
 Me... niego a morir...
 
-383
+381
 00:28:10,570 --> 00:28:12,330
 ¡Hasta que haya salvado a Ace...!
 
-384
+382
 00:28:12,330 --> 00:28:14,690
 ¿Quieres salvar a otra persona?
 
-385
+383
 00:28:14,690 --> 00:28:17,090
 No puedes ni salvarte a ti mismo, ¿sabes?
 
-386
+384
 00:28:17,090 --> 00:28:19,360
 ¿Tienen a un amigo tuyo encerrado aquí o algo?
 
-387
+385
 00:28:19,360 --> 00:28:23,440
 Es ridículo, en esta prisión debes
 cuidar de ti mismo sobre todo.
 
-388
+386
 00:28:23,440 --> 00:28:25,080
 Nadie va a salvarte...
 
-389
+387
 00:28:25,080 --> 00:28:26,800
 Nadie vendrá nunca a salvarte...
 
-390
+388
 00:28:26,800 --> 00:28:28,420
 Estamos completamente solos.
 
-391
+389
 00:28:28,910 --> 00:28:33,390
 Si te lanzan al mar de fuego, debes
 andar sobre otros prisioneros para salvarte.
 
-392
+390
 00:28:33,650 --> 00:28:38,680
 Si te encuentras con las bestias, debes tomar a cualquiera que esté cerca y usarlo de cebo.
 
-393
+391
 00:28:38,680 --> 00:28:41,000
 ¡Intenta ayudar a alguien y acabarás muerto!
 
-394
+392
 00:28:41,000 --> 00:28:44,930
 ¡Así que no balbucees esas tonterías sobre rescatar a alguien!
 
-395
+393
 00:28:44,930 --> 00:28:46,930
 ¡Me dan ganas de vomitar!
 
-396
+394
 00:28:52,780 --> 00:28:55,120
 Miren, viene alguien.
 
-397
+395
 00:28:55,120 --> 00:28:58,770
 No parece ser vigilante ni personal de la prisión...
 
-398
+396
 00:29:00,420 --> 00:29:01,550
 ¿Qué le ocurre a ese tipo?
 
-399
+397
 00:29:01,550 --> 00:29:02,850
 Está desnudo...
 
-400
+398
 00:29:10,590 --> 00:29:13,460
 ¡Mugi-chan, estoy aquí para salvarte...
 
-401
+399
 00:29:13,770 --> 00:29:17,270
 ...en nombre de nuestra amistad!
 
-402
+400
 00:29:32,950 --> 00:29:34,570
 ¿Qué le ocurre a ese tipo?
 
-403
+401
 00:29:34,570 --> 00:29:35,850
 Está cubierto de sangre.
 
-404
+402
 00:29:43,150 --> 00:29:45,740
 En aquel entonces, yo...
 
-405
+403
 00:29:45,740 --> 00:29:48,000
 ¡Siento haber huido!
 
-406
+404
 00:29:50,200 --> 00:29:53,470
 ¿Cuál es tu relación con él?
 
-407
+405
 00:29:54,640 --> 00:29:56,840
 ¡Su amigo!
 
-408
+406
 00:29:56,840 --> 00:30:00,340
 ¡Mugi-chan, no te dejaré morir!
 
-409
+407
 00:30:10,620 --> 00:30:13,220
 Dejó las llaves...
 
-410
+408
 00:30:13,220 --> 00:30:16,930
 Nunca se me había pasado por la cabeza fugarme...
 
-411
+409
 00:30:20,170 --> 00:30:23,980
 ¡Debo darme prisa y encontrar a Iva-san!
 
-412
+410
 00:30:23,980 --> 00:30:25,040
 ¿Iva-san?
 
-413
+411
 00:30:25,400 --> 00:30:29,200
 ¿Cómo iba a saber adónde fue ese maldito travesti?
 
-414
+412
 00:30:29,200 --> 00:30:30,510
 ¿Y quién eres tú?
 
-415
+413
 00:30:33,790 --> 00:30:36,140
 Emporio Ivankov...
 
-416
+414
 00:30:36,140 --> 00:30:39,000
 Sí, estaba aquí hace un tiempo.
 
-417
+415
 00:30:39,000 --> 00:30:41,360
 ¿No está muerto?
 
-418
+416
 00:30:41,360 --> 00:30:43,500
 ¿Y esa mirada?
 
-419
+417
 00:30:49,630 --> 00:30:52,720
 ¿Por qué buscar a alguien que no está aquí?
 
-420
+418
 00:30:52,720 --> 00:30:55,530
 ¿Qué más da? ¿Cómo saliste de tu celda?
 
-421
+419
 00:30:55,530 --> 00:30:58,290
 Déjame salir a mí también, ¿sí?
 
-422
+420
 00:31:00,930 --> 00:31:04,340
 Busco a alguien llamado Iva-san.
 
-423
+421
 00:31:04,340 --> 00:31:06,880
 Hola, ¿me escuchan?
 
-424
+422
 00:31:06,880 --> 00:31:08,900
 ¡Oigan, ¿me escuchan?!
 
-425
+423
 00:31:08,900 --> 00:31:10,530
 No te molestes...
 
-426
+424
 00:31:10,530 --> 00:31:13,180
 Los tipos de esa celda han muerto congelados.
 
-427
+425
 00:31:15,300 --> 00:31:17,020
 Eh...
 
-428
+426
 00:31:17,020 --> 00:31:19,510
 Te he escuchado.
 
-429
+427
 00:31:19,510 --> 00:31:22,000
 Quieres saber sobre ese maldito travesti, Ivankov, ¿verdad?
 
-430
+428
 00:31:22,000 --> 00:31:23,990
 ¿Sabes algo?
 
-431
+429
 00:31:23,990 --> 00:31:25,300
 Mira hacia allá.
 
-432
+430
 00:31:25,300 --> 00:31:26,480
 Ves el bosque, ¿verdad?
 
-433
+431
 00:31:26,480 --> 00:31:27,200
 Sí...
 
-434
+432
 00:31:27,520 --> 00:31:31,700
 Hay una sala de vigilancia abandonada.
 
-435
+433
 00:31:31,700 --> 00:31:36,890
 He visto salir a un tipo raro de ahí varias veces.
 
-436
+434
 00:31:36,890 --> 00:31:38,250
 ¿De verdad?
 
-437
+435
 00:31:38,250 --> 00:31:40,690
 Si crees que miento ve a comprobarlo tú mismo.
 
-438
+436
 00:31:42,840 --> 00:31:44,400
 ¡Gracias!
 
-439
+437
 00:31:44,400 --> 00:31:46,170
 De nada.
 
-440
+438
 00:31:47,350 --> 00:31:50,440
 Oye, ¿en ese bosque no está la guarida de los lobos?
 
-441
+439
 00:31:50,440 --> 00:31:52,710
 Oh, ¿de verdad?
 
-442
+440
 00:31:57,490 --> 00:31:58,990
 ¿Una puerta al inframundo?
 
-443
+441
 00:31:58,990 --> 00:32:01,160
 ¿Rapto Infernal? ¡¿Qué demonios significa eso?!
 
-444
+442
 00:32:01,160 --> 00:32:05,920
 ¡Qué tontería! ¡Iva-san no puede
 haber desaparecido de ese modo!
 
-445
+443
 00:32:05,920 --> 00:32:12,360
 ¡No lo conozco en persona, pero estoy seguro de que esa persona, que ha obrado innumerables milagros, lo ha hecho aquí también!
 
-446
+444
 00:32:13,070 --> 00:32:17,410
 ¡Iva-san es el dios del mundo de los travestis!
 
-447
+445
 00:32:20,000 --> 00:32:21,310
 ¡Te lo suplico!
 
-448
+446
 00:32:21,310 --> 00:32:24,290
 ¡Salva la vida de Mugi-chan!
 
-449
+447
 00:32:24,560 --> 00:32:27,660
 ¡Si no existe antídoto para este veneno,
 
-450
+448
 00:32:29,820 --> 00:32:32,140
 sólo tú puedes salvarlo!
 
-451
+449
 00:32:33,410 --> 00:32:37,900
 ¡Lo único que puedo hacer es no rendirme hasta encontrarte!
 
-452
+450
 00:33:07,500 --> 00:33:08,430
 ¡Oh, maldición!
 
-453
+451
 00:33:39,440 --> 00:33:41,370
 ¡¿Mugi-chan?!
 
-454
+452
 00:33:42,450 --> 00:33:44,300
 ¡¿Qué le están...
 
-455
+453
 00:33:44,300 --> 00:33:46,010
 ...haciendo...
 
-456
+454
 00:33:46,010 --> 00:33:47,570
 ...a Bon-chan?!
 
-457
+455
 00:33:48,460 --> 00:33:50,910
 ¡Dejen a Bon-chan...
 
-458
+456
 00:33:52,180 --> 00:33:54,240
 ...en paz!
 
-459
+457
 00:34:27,080 --> 00:34:29,250
 ¡M-Mugi-chan!
 
-460
+458
 00:34:29,250 --> 00:34:30,370
 ¿Qué...
 
-461
+459
 00:34:30,370 --> 00:34:31,380
 ...fue...
 
-462
+460
 00:34:31,380 --> 00:34:33,250
 ...eso?
 
-463
+461
 00:34:52,980 --> 00:34:56,310
 Tiempo restante para la ejecución de Ace...
 
-464
+462
 00:34:56,310 --> 00:34:58,940
 ...26 horas.

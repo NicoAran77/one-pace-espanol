@@ -51,6 +51,18 @@ ARCS = {
 }
 
 
+NOISE_STYLE = re.compile(r"credit|warning|kara|romaji|rom$|kanji|furigana|^ndt", re.I)
+VECTOR = re.compile(r"[mnlbsc\d\s.\-]+")
+ARL_RENUMBER = {
+    # arl numera Long Ring Long Land desde 1; onepace.net desde 0.
+    **{f"LR_{n}": f"LR_{n - 1}" for n in range(1, 8)},
+    # onepace.net dividio Post-Enies Lobby: el antiguo 3 ahora es el 4, y asi sucesivamente.
+    "PEN_3": "PEN_4", "PEN_4": "PEN_5", "PEN_5": "PEN_6",
+}
+FEDEW_RENUMBER = {"PEN_3": "PEN_4", "PEN_4": "PEN_5", "PEN_5": "PEN_6"}
+OLD_PEN_BATCH = "59497fc3"
+
+
 def norm(text):
     return re.sub(r"[^a-z0-9]", "", text.lower())
 
@@ -156,7 +168,8 @@ def parse_ass(path):
     """Devuelve [(inicio, fin, texto)] sin etiquetas ni dibujos."""
     with open(path, encoding="utf-8-sig", errors="replace") as f:
         lines = f.read().splitlines()
-    fmt, events, seen = None, [], set()
+    fmt, rows, seen = None, [], set()
+    lengths = {}
     for line in lines:
         if line.startswith("Format:") and "Text" in line:
             fmt = [x.strip() for x in line[7:].split(",")]
@@ -165,21 +178,35 @@ def parse_ass(path):
             if len(parts) != len(fmt):
                 continue
             row = dict(zip(fmt, parts))
-            raw = row["Text"]
-            if re.search(r"\\p[1-9]", raw) or "mpv.io" in raw:
+            raw, style = row["Text"], row.get("Style", "").strip()
+            if re.search(r"\\p[1-9]", raw) or re.search(r"\\[kK][fo]?\d", raw) or "mpv.io" in raw:
+                continue
+            if NOISE_STYLE.search(style):
                 continue
             text = re.sub(r"\{[^}]*\}", "", raw)
             text = text.replace("\\N", "\n").replace("\\n", "\n").replace("\\h", " ")
             text = "\n".join(x.strip() for x in text.split("\n") if x.strip())
-            if not text:
+            if not text or VECTOR.fullmatch(text):
                 continue
             start, end = ass_time(row["Start"]), ass_time(row["End"])
             if end <= start or (start, end, text) in seen:
                 continue
             seen.add((start, end, text))
+            rows.append((start, end, text, style))
+            lengths.setdefault(style, []).append(len(text))
+    # Estilos con casi solo silabas sueltas son efectos de karaoke, no dialogo.
+    fragments = {s for s, v in lengths.items() if len(v) >= 20 and sum(v) / len(v) <= 3}
+    rows = sorted((r for r in rows if r[3] not in fragments), key=lambda r: (r[0], r[1]))
+    # Une repeticiones cuadro a cuadro del mismo texto en una sola linea.
+    events, last = [], {}
+    for start, end, text, _ in rows:
+        i = last.get(text)
+        if i is not None and start <= events[i][1] + 0.1:
+            events[i] = (events[i][0], max(events[i][1], end), text)
+        else:
+            last[text] = len(events)
             events.append((start, end, text))
-    events.sort(key=lambda e: (e[0], e[1]))
-    return events
+    return [e for e in events if e[1] - e[0] >= 0.2]
 
 
 def to_srt(events):
@@ -242,19 +269,72 @@ def spanish_files(subs_repo):
     return found
 
 
-def merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current):
-    """Une episodios. Si un mismo id tiene otro titulo en fedew, no es el mismo episodio."""
-    videos = {v["id"]: dict(v) for v in arl_meta["videos"]}
-    torrents = {k: list(v) for k, v in arl_streams.items()}
-    for video in fedew_meta["videos"]:
-        vid, known = video["id"], videos.get(video["id"])
-        if known and norm(known.get("title", "")) != norm(video.get("title", "")):
+def site_titles():
+    """Titulos oficiales por id, leidos de la pagina en ingles de onepace.net."""
+    page = fetch("https://onepace.net/en/watch").decode("utf-8", "replace")
+    page = re.sub(r"<script.*?</script>|<style.*?</style>|<svg.*?</svg>", "", page, flags=re.S)
+    tokens = [html.unescape(x).strip() for x in re.split(r"<[^>]+>", page)]
+    tokens = [x for x in tokens if x and x not in ("·", "•")]
+    titles, arc = {}, None
+    for i, token in enumerate(tokens):
+        if token != "Duration":
             continue
-        if not known:
-            if vid == "LR_0":  # numeracion antigua, ya esta como LR_1 en arl
-                continue
-            videos[vid] = dict(video)
-        torrents.setdefault(vid, []).extend(fedew_streams.get(vid, []))
+        k = i - 1
+        while k > 0 and i - k < 12 and tokens[k] != "Covered anime episodes":
+            k -= 1
+        start = k if tokens[k] == "Covered anime episodes" else i
+        if tokens[start - 2] == "Covered manga chapters":
+            start -= 2
+        elif tokens[start - 3] == "Covered manga chapters":
+            start -= 3
+        title = tokens[start - 1]
+        if tokens[start - 2] == ":" and tokens[start - 3].isdigit():
+            prefix = ARC_BY_NORM.get(norm(arc or ""))
+            if prefix and title != "Untitled":
+                titles[f"{prefix}_{int(tokens[start - 3])}"] = title
+        elif tokens[start - 2] != "Special:":
+            arc = title
+    return titles
+
+
+def renumber(meta, streams, mapping):
+    """Pasa los ids de una fuente a la numeracion actual de onepace.net."""
+    if not all(old in streams for old in mapping):
+        return meta["videos"], streams  # la fuente ya cambio: no tocar
+    videos, moved = [], {}
+    for video in meta["videos"]:
+        video = dict(video)
+        new = mapping.get(video["id"], video["id"])
+        if new != video["id"]:
+            video.pop("overview", None)
+            if new.startswith("PEN_"):
+                video["episode"] = int(new.rsplit("_", 1)[1])
+        moved[new] = streams.get(video["id"], [])
+        video["id"] = new
+        videos.append(video)
+    for vid in ("PEN_1", "PEN_2"):  # el lote antiguo no coincide con el corte actual
+        moved[vid] = [s for s in moved.get(vid, []) if not s["infoHash"].startswith(OLD_PEN_BATCH)]
+    return videos, moved
+
+
+def merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current, titles):
+    """Une episodios. Si un mismo id sigue con otro titulo, no es el mismo episodio."""
+    arl_videos, arl_streams = renumber(arl_meta, arl_streams, ARL_RENUMBER)
+    fedew_videos, fedew_streams = renumber(fedew_meta, fedew_streams, FEDEW_RENUMBER)
+    for video in arl_videos + fedew_videos:
+        video["title"] = titles.get(video["id"], video.get("title", ""))
+    videos = {v["id"]: dict(v) for v in arl_videos}
+    torrents = {k: list(v) for k, v in arl_streams.items()}
+    for video in fedew_videos:
+        vid, known = video["id"], videos.get(video["id"])
+        if known and vid in titles or not known:
+            videos.setdefault(vid, dict(video))
+            torrents.setdefault(vid, []).extend(fedew_streams.get(vid, []))
+        elif norm(known.get("title", "")) == norm(video.get("title", "")):
+            torrents.setdefault(vid, []).extend(fedew_streams.get(vid, []))
+    # La lista de arl arrastra titulos desplazados en Long Ring Long Land.
+    if "LR_0" in videos and "LR_0" not in titles:
+        videos["LR_0"]["title"] = "Prologue"
     # Torrents publicados en onepace.net de un solo episodio.
     for ih, name in current.items():
         vid = release_id(name)
@@ -266,7 +346,7 @@ def merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current):
             if not seasons:
                 continue
             title = re.sub(r"^\[One Pace\](\[[^\]]*\])?\s*|\s*\[.*$", "", name)
-            videos[vid] = {"id": vid, "season": seasons[0], "episode": int(number), "title": title}
+            videos[vid] = {"id": vid, "season": seasons[0], "episode": int(number), "title": titles.get(vid, title)}
         torrents.setdefault(vid, []).append({"infoHash": ih})
     return videos, torrents
 
@@ -286,13 +366,13 @@ def torrent_streams(entries, current, spanish):
         quality = f"Torrent {res.group(1)}p" if res else "Torrent"
         subs = [x for x in s.get("subtitles", []) if x.get("lang") == "eng"]
         if ih in current:
-            note = "Subtítulos en español aparte" if spanish else "Sin subtítulos en español"
+            note = "Español: elige «Español» en subtítulos" if spanish else "Sin subtítulos en español del addon"
             subs = spanish + subs
         else:
             note = "Edición antigua, sin subtítulos en español"
         stream = {
             "name": "One Pace\nTorrent",
-            "title": f"{quality} · audio japonés\n{note}",
+            "title": f"{quality}\n{note}",
             "infoHash": ih,
             "subtitles": subs,
             "behaviorHints": {"bingeGroup": "onepace-torrent"},
@@ -326,7 +406,8 @@ def main(subs_repo, out):
     pixeldrain = parse_pixeldrain(lists)
     es_files = spanish_files(subs_repo)
     english = english_starts(subs_repo)
-    videos, torrents = merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current)
+    titles = site_titles()
+    videos, torrents = merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current, titles)
 
     for folder in ("meta", "stream", "subs", "catalog"):
         shutil.rmtree(os.path.join(out, folder), ignore_errors=True)
@@ -353,6 +434,7 @@ def main(subs_repo, out):
             with open(os.path.join(out, "subs", f"{vid}_{lang}.srt"), "w", encoding="utf-8", newline="\n") as f:
                 f.write(to_srt(events))
             subtitles.append({"id": f"{vid}_{lang}", "lang": "spa", "url": f"{BASE_URL}/subs/{vid}_{lang}.srt"})
+            break  # una sola opcion: la latina si existe, si no la de Espana
 
         streams = torrent_streams(torrents.get(vid, []), current, subtitles)
         if vid in pixeldrain["sub"]:
@@ -390,7 +472,7 @@ def main(subs_repo, out):
     write_json(out, "catalog/series/onepace-es.json", {"metas": [
         {k: meta[k] for k in ("id", "type", "name", "poster", "background", "logo", "description", "genres")}]})
     write_json(out, "manifest.json", {
-        "id": "io.github.nicoaran77.onepace.es", "version": "1.0.0",
+        "id": "io.github.nicoaran77.onepace.es", "version": "1.1.0",
         "name": "One Pace en español",
         "description": "One Pace con subtítulos oficiales en español y doblaje latino cuando existen. "
                        "Ve a Descubrir → Series → One Pace en español.",

@@ -14,7 +14,7 @@ La serie aparece en **Descubrir → Series → One Pace en español**. No aparec
 
 ## Opciones de cada episodio
 
-- **Torrent:** audio japonés. Elige los subtítulos en español en el reproductor.
+- **Torrent:** elige «Español» en el menú de subtítulos. Algunos videos traen además pistas de audio y subtítulos propios.
 - **Pixeldrain, subtítulos:** el video ya trae los subtítulos latinos. Puede tener límite diario.
 - **Pixeldrain, doblaje:** doblaje latino, solo en los episodios que lo tienen.
 
