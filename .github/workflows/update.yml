@@ -1,0 +1,38 @@
+name: Actualizar addon
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Descargar subtitulos oficiales
+        run: git clone --depth 1 https://github.com/one-pace/one-pace-public-subtitles.git "$RUNNER_TEMP/subs"
+
+      - name: Generar addon
+        run: python -I scripts/build.py "$RUNNER_TEMP/subs" .
+
+      - name: Publicar cambios
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Actualizar episodios y subtitulos"
+          git push
