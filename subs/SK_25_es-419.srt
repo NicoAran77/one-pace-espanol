@@ -77,12 +77,12 @@ porque tienen valor en mi vida.
 Alcancé a ver un fragmento del futuro.
 
 19
-00:01:52,970 --> 00:01:54,050
-¿Qué?
+00:01:50,090 --> 00:01:55,510
+Final
 
 20
-00:01:53,630 --> 00:01:59,050
-Final
+00:01:52,970 --> 00:01:54,050
+¿Qué?
 
 21
 00:01:54,050 --> 00:01:56,180
@@ -357,7 +357,7 @@ Justo cuando pensé que podría
 disfrutar de mi cultivo de calabazas...
 
 85
-00:05:47,660 --> 00:05:54,450
+00:05:44,120 --> 00:05:50,910
 BAJA SKYPIEA
 MAR BLANCO
 
@@ -836,542 +836,866 @@ medicina de otros países!
 Si dejo que compren lo que quieran, no conseguiremos nada bueno.
 
 201
-00:12:49,620 --> 00:12:52,170
-El sol se está poniendo.
+00:12:40,530 --> 00:12:41,950
+¿Navegante-san?
 
 202
-00:12:52,170 --> 00:12:53,590
-Qué buena vista.
+00:12:41,950 --> 00:12:42,560
+¿Eh?
 
 203
-00:12:53,590 --> 00:12:56,840
-¡Sí, tienes razón!
+00:12:42,560 --> 00:12:45,610
+¿Adónde se dirige el barco?
 
 204
-00:13:11,600 --> 00:13:13,610
-¡Nami-san, Robin-chan, ¿están bien?!
+00:12:45,610 --> 00:12:47,020
+¿Adónde, dices?
 
 205
-00:13:16,850 --> 00:13:18,560
-¡Qué susto!
+00:12:47,020 --> 00:12:48,400
+A la próxima isla...
 
 206
-00:13:18,560 --> 00:13:21,140
-¡El pulpo se encogió de repente!
+00:12:52,240 --> 00:12:53,410
+¿Qué? ¿Qué?
 
 207
-00:13:21,140 --> 00:13:22,400
-¿Se le habrá salido el aire?
-
-208
-00:13:22,400 --> 00:13:24,190
+00:12:53,410 --> 00:12:54,320
 ¿Qué sucede?
 
+208
+00:12:54,320 --> 00:12:56,990
+¿Qué sucede, Nami-san?
+
 209
-00:13:26,830 --> 00:13:28,920
-¡Pero llegamos!
+00:12:58,700 --> 00:13:00,630
+¡Maldición!
 
 210
-00:13:28,920 --> 00:13:30,170
-¡Sin morir!
+00:13:00,630 --> 00:13:04,870
+¡Entramos en una corriente
+de aire y nos está llevando!
 
 211
-00:13:30,170 --> 00:13:32,040
-¡Oye, gracias!
+00:13:04,870 --> 00:13:06,220
+¿Una corriente de aire?
 
 212
-00:13:32,040 --> 00:13:34,250
-Pero...
+00:13:06,220 --> 00:13:08,270
+Es verdad, hay viento.
 
 213
-00:13:38,670 --> 00:13:41,260
-Fuimos a un lugar increíble.
+00:13:08,270 --> 00:13:09,550
+¿Es malo?
 
 214
-00:13:41,260 --> 00:13:44,220
-Ahora que caímos, se ve muy lejano.
+00:13:09,550 --> 00:13:10,930
+¡Por supuesto!
 
 215
-00:13:44,220 --> 00:13:46,470
-Como si hubiéramos estado soñando.
+00:13:10,930 --> 00:13:13,510
+¡Ahora no sabemos dónde caeremos!
 
 216
-00:13:46,470 --> 00:13:48,430
-Es una tierra de ensueño.
+00:13:13,510 --> 00:13:15,350
+¿Qué hacemos?
 
 217
-00:13:48,430 --> 00:13:49,970
-Me pregunto si volveremos.
+00:13:15,350 --> 00:13:19,350
+En esta situación, no podemos
+desplegar las velas para controlarlo.
 
 218
-00:13:49,970 --> 00:13:52,690
-Cuando mueras, irás ahí o muy cerca.
+00:13:19,350 --> 00:13:21,480
+¡No te preocupes!
 
 219
-00:13:52,690 --> 00:13:55,860
-Zoro, ¿crees que irás al cielo?
+00:13:21,480 --> 00:13:24,770
+¡Cuando lleguemos al mar, solo
+debemos volver a la siguiente isla!
 
 220
-00:13:55,860 --> 00:13:57,490
-¡Maldito...!
+00:13:24,770 --> 00:13:27,690
+Siempre tan relajado...
 
 221
-00:13:57,490 --> 00:14:00,070
-Bueno, parece que todo se calmó.
+00:13:27,690 --> 00:13:28,650
+Pero...
 
 222
-00:14:00,070 --> 00:14:01,780
-Iré a hacer café.
+00:13:29,570 --> 00:13:31,610
+¿Qué, Sanji-kun?
 
 223
-00:14:01,780 --> 00:14:03,920
-¡Quiero comida, Sanji!
+00:13:31,610 --> 00:13:34,150
+No, debe ser mi imaginación.
 
 224
-00:14:03,920 --> 00:14:07,370
+00:13:34,150 --> 00:13:35,160
+¿Eh?
+
+225
+00:13:35,160 --> 00:13:36,280
+¿Qué cosa?
+
+226
+00:13:36,280 --> 00:13:38,540
+No, no es nada.
+
+227
+00:13:38,540 --> 00:13:39,490
+¡Cuidado!
+
+228
+00:13:39,490 --> 00:13:40,330
+¡Oigan!
+
+229
+00:13:45,160 --> 00:13:47,120
+Ah, ¿estaba soñando?
+
+230
+00:13:47,120 --> 00:13:48,410
+¿Qué te pasa?
+
+231
+00:13:48,410 --> 00:13:50,320
+¡Te mataré, marimo de mierda!
+
+232
+00:13:50,320 --> 00:13:51,280
+¡Me asustaste!
+
+233
+00:13:51,280 --> 00:13:54,790
+Ya, ya, Zoro está cansado
+por la pelea del cielo.
+
+234
+00:14:03,240 --> 00:14:05,750
+El sol se está poniendo.
+
+235
+00:14:05,750 --> 00:14:07,190
+Qué buena vista.
+
+236
+00:14:07,190 --> 00:14:10,040
+¡Sí, tienes razón!
+
+237
+00:14:13,780 --> 00:14:14,620
+¿Qué? ¿Qué?
+
+238
+00:14:14,620 --> 00:14:16,030
+¿Qué sucede?
+
+239
+00:14:16,030 --> 00:14:17,450
+¡Corran!
+
+240
+00:14:17,450 --> 00:14:18,910
+¡No empujes!
+
+241
+00:14:18,910 --> 00:14:20,540
+¡Debemos alejarnos de él!
+
+242
+00:14:20,540 --> 00:14:21,710
+¡Es una pelea entre compañeros!
+
+243
+00:14:34,890 --> 00:14:36,050
+¡Bellamy!
+
+244
+00:14:36,060 --> 00:14:37,350
+¡Sarquiss!
+
+245
+00:14:37,350 --> 00:14:39,140
+¡Por favor, deténganlos!
+
+246
+00:14:39,850 --> 00:14:41,020
+¡Por favor!
+
+247
+00:14:41,020 --> 00:14:42,440
+¡Detente ya!
+
+248
+00:14:42,440 --> 00:14:44,940
+¡¿Por qué haces esto?!
+
+249
+00:14:45,310 --> 00:14:46,940
+¿Qué está pasando?
+
+250
+00:14:46,940 --> 00:14:49,020
+¡Parece que Sarquiss está sufriendo!
+
+251
+00:14:49,020 --> 00:14:50,350
+¿Por qué?
+
+252
+00:14:50,900 --> 00:14:52,740
+¿Preguntas por qué?
+
+253
+00:14:52,740 --> 00:14:54,530
+Sarquiss.
+
+254
+00:14:54,530 --> 00:14:56,450
+Bellamy.
+
+255
+00:14:57,410 --> 00:15:00,080
+Es porque han avergonzado a mi símbolo.
+
+256
+00:15:00,080 --> 00:15:01,460
+¿Qué otra razón podría haber?
+
+257
+00:15:04,540 --> 00:15:07,420
+Exista o no exista la Isla del Cielo...
+
+258
+00:15:07,420 --> 00:15:11,260
+Sea o no sea un mito la Ciudad de Oro...
+
+259
+00:15:13,300 --> 00:15:16,140
+Nada de eso importa.
+
+260
+00:15:16,760 --> 00:15:20,100
+Tomar ventaja de los ideales enemigos y luego desecharlos...
+
+261
+00:15:20,810 --> 00:15:22,520
+¿No fue ésa mi orden?
+
+262
+00:15:22,520 --> 00:15:24,600
+¿Y bien, Bellamy?
+
+263
+00:15:25,770 --> 00:15:27,060
+Ése es...
+
+264
+00:15:27,060 --> 00:15:29,230
+¡Don Quijote Doflamingo!
+
+265
+00:15:29,230 --> 00:15:31,780
+¡Es uno de los Shichibukai!
+
+266
+00:15:31,780 --> 00:15:34,610
+¡Su cabeza vale más de $300.000.000!
+
+267
+00:15:34,610 --> 00:15:36,450
+¡¿Qué hace aquí semejante tipo?!
+
+268
+00:15:36,450 --> 00:15:41,580
+No necesito a dos basuras siguiéndome, mocosos.
+
+269
+00:15:42,240 --> 00:15:43,330
+¡Maldición!
+
+270
+00:15:43,330 --> 00:15:45,040
+Mi cuerpo está-
+
+271
+00:15:45,040 --> 00:15:46,080
+¡Por favor, detente!
+
+272
+00:15:46,080 --> 00:15:47,790
+¡Ten piedad de mí!
+
+273
+00:15:48,180 --> 00:15:50,630
+¡NO!
+
+274
+00:15:54,300 --> 00:15:55,300
+¡Bellamy!
+
+275
+00:15:59,850 --> 00:16:01,640
+O-Otra oportunidad...
+
+276
+00:16:02,560 --> 00:16:06,350
+¡Por favor dame otra oportunidad!
+
+277
+00:16:06,350 --> 00:16:10,320
+¡Yo... nosotros te seguiremos!
+
+278
+00:16:10,320 --> 00:16:11,640
+¡Bellamy!
+
+279
+00:16:11,650 --> 00:16:13,150
+¡Es suficiente, Bellamy!
+
+280
+00:16:15,490 --> 00:16:20,870
+¡Perdí, pero juro bajo tu símbolo que jamás le daré la espalda a tus ideales!
+
+281
+00:16:20,870 --> 00:16:23,580
+¡Pero así es como yo actúo!
+
+282
+00:16:23,580 --> 00:16:26,210
+Aunque me enfrente a tipos débiles,
+
+283
+00:16:26,210 --> 00:16:29,290
+¡Algún día llegaré a tu posición!
+
+284
+00:16:30,460 --> 00:16:32,250
+Qué subordinado más obediente.
+
+285
+00:16:32,250 --> 00:16:33,840
+Me hace llorar.
+
+286
+00:16:33,840 --> 00:16:38,720
+Bellamy, siempre me gustó eso de ti.
+
+287
+00:16:40,930 --> 00:16:44,140
+La Nueva Era pronto estará sobre nosotros.
+
+288
+00:16:44,140 --> 00:16:45,640
+Haz lo que quieras.
+
+289
+00:16:46,890 --> 00:16:48,100
+Pero...
+
+290
+00:16:48,100 --> 00:16:50,270
+No tienes cabida entre mis subordinados.
+
+291
+00:16:52,940 --> 00:16:56,030
+¡DOFLAMINGO!
+
+292
+00:17:01,830 --> 00:17:05,160
+¡El novato de 55 millones, Bellamy!
+
+293
+00:17:05,160 --> 00:17:07,000
+¡Fue derrotado como un niño!
+
+294
+00:17:08,620 --> 00:17:10,710
+¡La hora ha llegado!
+
+295
+00:17:10,710 --> 00:17:13,040
+¡Ven hacia nosotros y quédate!
+
+296
+00:17:13,040 --> 00:17:17,010
+¡Un mundo donde sólo los auténticos piratas podrán sobrevivir está cerca!
+
+297
+00:17:17,010 --> 00:17:19,300
+Aquellos que carecen de poder, que huyan mientras puedan.
+
+298
+00:17:19,300 --> 00:17:24,760
+¡Gente con poder desmesurado vendrá y la Nueva Era comenzará!
+
+299
+00:17:28,980 --> 00:17:31,520
+Aún falta mucho para
+llegar al mar Azul.
+
+300
+00:17:31,520 --> 00:17:36,250
+Me preocupa que nos hayamos desviado mucho de nuestro destino.
+
+301
+00:17:36,250 --> 00:17:37,070
+¡Sí!
+
+302
+00:17:37,070 --> 00:17:39,860
+Entonces, ¿qué tal si te canto una canción
+de amor para que te tranquilices?
+
+303
+00:17:39,860 --> 00:17:41,900
+¡Cállate!
+
+304
+00:17:43,320 --> 00:17:46,720
+¡A este paso, lo mejor sería
+llegar volando hasta Laugh Tale!
+
+305
+00:17:46,720 --> 00:17:48,370
+¡Usopp, eso es impresionante!
+
+306
+00:17:48,370 --> 00:17:50,080
+Eso es imposible.
+
+307
+00:17:50,080 --> 00:17:55,170
+Porque, para llegar a Laugh Tale, hay que cruzar más de la mitad del Grand Line.
+
+308
+00:17:55,170 --> 00:17:57,420
+Ah, sí, es verdad...
+
+309
+00:17:57,420 --> 00:17:58,340
+Ya lo sabía.
+
+310
+00:17:58,340 --> 00:18:02,470
+Qué aburrido...
+
+311
+00:18:02,470 --> 00:18:04,610
+¿Cuándo aterrizaremos?
+
+312
+00:18:04,610 --> 00:18:05,800
+Duérmete.
+
+313
+00:18:05,800 --> 00:18:09,060
+¡Si tienes tiempo, ven, Zoro!
+
+314
+00:18:09,060 --> 00:18:11,270
+¡Es divertido!
+
+315
+00:18:11,270 --> 00:18:12,350
+¿Eh?
+
+316
+00:18:12,350 --> 00:18:13,270
+¿Luffy?
+
+317
+00:18:13,270 --> 00:18:14,740
+¿Desde dónde nos habla?
+
+318
+00:18:14,740 --> 00:18:17,860
+Su voz se oye muy lejana.
+
+319
+00:18:17,860 --> 00:18:19,870
+Luffy, ¿dónde estás?
+
+320
+00:18:19,870 --> 00:18:21,780
+¡Aquí!
+
+321
+00:18:21,780 --> 00:18:24,570
+¡Vengan todos!
+
+322
+00:18:24,570 --> 00:18:25,790
+¡Esto es divertido!
+
+323
+00:18:25,790 --> 00:18:27,990
+¡Maldición, está ahí arriba!
+
+324
+00:18:31,750 --> 00:18:34,470
+¡No se preocupen!
+
+325
+00:18:36,140 --> 00:18:38,670
+¡Oye, no hagas locuras, Luffy!
+
+326
+00:18:38,670 --> 00:18:41,760
+¡Nuestras vidas dependen
+de ese globo!
+
+327
+00:18:41,760 --> 00:18:43,600
+¡No se preocupen!
+
+328
+00:18:49,650 --> 00:18:51,050
+¡No, Luffy!
+
+329
+00:18:51,050 --> 00:18:51,900
+¡Vuelve!
+
+330
+00:18:51,900 --> 00:18:53,960
+¡Oye, Luffy, detente!
+
+331
+00:18:53,960 --> 00:18:56,150
+¿Qué pasa, Sanji-kun?
+
+332
+00:18:56,150 --> 00:18:57,680
+¡El pulpo se está desinflando!
+
+333
+00:18:57,680 --> 00:18:59,940
+¡A este paso, caeremos!
+
+334
+00:18:59,940 --> 00:19:00,580
+¿Eh?
+
+335
+00:19:00,580 --> 00:19:02,790
+¡Oye, Luffy!
+
+336
+00:19:02,790 --> 00:19:04,220
+¿Qué sucede?
+
+337
+00:19:04,220 --> 00:19:06,140
+¡Dijo que el pulpo
+se está desinflando!
+
+338
+00:19:06,140 --> 00:19:06,880
+¡¿Qué?!
+
+339
+00:19:06,880 --> 00:19:10,310
+Ahora que lo miro, se ve
+un poco más pequeño.
+
+340
+00:19:10,310 --> 00:19:11,080
+¿Qué hacemos?
+
+341
+00:19:11,080 --> 00:19:13,320
+¡Aún estamos muy alto!
+
+342
+00:19:13,320 --> 00:19:15,550
+¿Resistirá hasta que aterricemos?
+
+343
+00:19:17,510 --> 00:19:18,950
+¡Oye, Luffy!
+
+344
+00:19:18,950 --> 00:19:20,070
+¡Algo no anda bien!
+
+345
+00:19:20,070 --> 00:19:21,350
+¡Vuelve!
+
+346
+00:19:21,350 --> 00:19:22,080
+¿Eh?
+
+347
+00:19:35,100 --> 00:19:36,560
+¡Qué susto!
+
+348
+00:19:36,560 --> 00:19:38,570
+¡De repente dejó de rebotar!
+
+349
+00:19:38,570 --> 00:19:41,440
+¡Te digo que el pulpo
+se está desinflando!
+
+350
+00:19:47,820 --> 00:19:48,850
+¿Eh?
+
+351
+00:19:48,850 --> 00:19:50,870
+Volvimos a lo de antes.
+
+352
+00:19:51,370 --> 00:19:54,910
+¡Estamos cayendo!
+
+353
+00:19:54,910 --> 00:19:56,750
+¡Esto es malo!
+
+354
+00:19:56,750 --> 00:19:58,420
+¡A este paso, moriremos!
+
+355
+00:19:58,420 --> 00:20:00,290
+¡No necesariamente caeremos en el mar!
+
+356
+00:20:00,290 --> 00:20:01,420
+¡¿De verdad?!
+
+357
+00:20:01,420 --> 00:20:02,130
+Maldición...
+
+358
+00:20:02,130 --> 00:20:04,350
+¿Qué vas a hacer, Usopp?
+
+359
+00:20:04,350 --> 00:20:05,520
+¡No lo sé!
+
+360
+00:20:05,520 --> 00:20:07,520
+¡Protegeré el barco!
+
+361
+00:20:11,480 --> 00:20:12,820
+¡¿Qué vas a hacer?!
+
+362
+00:20:12,820 --> 00:20:15,190
+¡No hagas locuras, Usopp!
+
+363
+00:20:16,150 --> 00:20:17,610
+¡Usopp...
+
+364
+00:20:17,610 --> 00:20:19,570
+...Aaaaaahhh!
+
+365
+00:20:25,910 --> 00:20:28,530
+¡Bien, salió perfecto!
+
+366
+00:20:28,530 --> 00:20:29,030
+¡Bien!
+
+367
+00:20:30,610 --> 00:20:35,750
+¡Usaré todos los Breath Dials!
+
+368
+00:20:35,750 --> 00:20:38,750
+¡Vamos, flota!
+
+369
+00:20:46,260 --> 00:20:47,590
+Desaceleramos.
+
+370
+00:20:47,590 --> 00:20:48,440
+¡Genial!
+
+371
+00:20:48,440 --> 00:20:50,180
+¿Nos salvamos?
+
+372
+00:20:50,180 --> 00:20:51,840
+Eso parece.
+
+373
+00:20:53,010 --> 00:20:55,560
+¿Vieron mi gran intervención?
+
+374
+00:20:55,560 --> 00:20:57,220
+¡Usopp, eres genial!
+
+375
+00:20:59,230 --> 00:21:01,400
+¡Por un momento no
+sabía qué sucedería!
+
+376
+00:21:01,400 --> 00:21:02,490
+De verdad...
+
+377
+00:21:02,490 --> 00:21:04,670
+Pensé que era nuestro fin.
+
+378
+00:21:06,980 --> 00:21:08,040
+¿Por qué?
+
+379
+00:21:10,790 --> 00:21:12,420
+¡Usopp!
+
+380
+00:21:16,880 --> 00:21:19,550
+¡Chicos, sujétense fuerte a algo!
+
+381
+00:21:33,860 --> 00:21:36,990
+¡Nami-san, Robin-chan, ¿están bien?!
+
+382
+00:21:37,010 --> 00:21:39,430
+¡Qué susto!
+
+383
+00:21:39,430 --> 00:21:41,690
+¡El pulpo se encogió de repente!
+
+384
+00:21:41,690 --> 00:21:43,310
+¿Se le habrá salido el aire?
+
+385
+00:21:43,310 --> 00:21:45,030
+¿Qué sucede?
+
+386
+00:21:47,830 --> 00:21:49,660
+¡Pero llegamos!
+
+387
+00:21:49,660 --> 00:21:50,820
+¡Sin morir!
+
+388
+00:21:50,820 --> 00:21:52,580
+¡Oye, gracias!
+
+389
+00:21:53,000 --> 00:21:54,820
+Pero...
+
+390
+00:21:59,200 --> 00:22:01,830
+Fuimos a un lugar increíble.
+
+391
+00:22:01,830 --> 00:22:04,880
+Ahora que caímos, se ve muy lejano.
+
+392
+00:22:04,880 --> 00:22:07,000
+Como si hubiéramos estado soñando.
+
+393
+00:22:07,000 --> 00:22:09,000
+Es una tierra de ensueño.
+
+394
+00:22:09,000 --> 00:22:10,510
+Me pregunto si volveremos.
+
+395
+00:22:10,510 --> 00:22:13,220
+Cuando mueras, irás ahí o muy cerca.
+
+396
+00:22:13,220 --> 00:22:16,400
+Zoro, ¿crees que irás al cielo?
+
+397
+00:22:16,400 --> 00:22:18,020
+¡Maldito...!
+
+398
+00:22:18,020 --> 00:22:20,680
+Bueno, parece que todo se calmó.
+
+399
+00:22:20,680 --> 00:22:22,390
+Iré a hacer café.
+
+400
+00:22:22,390 --> 00:22:24,520
+¡Quiero comida, Sanji!
+
+401
+00:22:24,520 --> 00:22:28,070
 ¡Enseguida la hago, así que
 toma café y espera!
 
-225
-00:14:10,450 --> 00:14:13,790
-Los piratas siempre dividen sus tesoros equitativamente.
-
-226
-00:14:13,790 --> 00:14:16,080
-¡¿Equitativamente?!
-
-227
-00:14:16,080 --> 00:14:17,040
-¡Por supuesto!
-
-228
-00:14:17,040 --> 00:14:18,370
-¡Estaba esperando eso!
-
-229
-00:14:18,380 --> 00:14:21,010
-¡Quiero comprar una estatua de bronce!
-
-230
-00:14:21,010 --> 00:14:22,920
-¡Sí! ¡¿Puedo comprar libros?!
-
-231
-00:14:22,920 --> 00:14:27,930
-Una nueva sartén, un horno de pan, un juego de platos, una ratonera gigante...
-
-232
-00:14:27,930 --> 00:14:30,510
-¡Aun con eso, me sobraría mucho dinero!
-
-233
-00:14:30,510 --> 00:14:32,390
-¡Yo compraría todo el licor que pudiera beber!
-
-234
-00:14:32,390 --> 00:14:35,350
-Primero, tomaré un 80% para mis ahorros.
-
-235
-00:14:35,350 --> 00:14:37,150
-¡No, espera!
-
-236
-00:14:37,150 --> 00:14:38,860
-Sólo bromeaba.
-
-237
-00:14:38,860 --> 00:14:43,110
-¡Espero que sea así! ¡Nadie necesita tantos ahorros!
-
-238
-00:14:43,110 --> 00:14:45,320
-Cuando digo ahorros me refiero a...
-
-239
-00:14:45,320 --> 00:14:49,070
-Dinero para poder reparar el barco.
-
-240
-00:14:49,070 --> 00:14:51,910
-¿El barco? O sea, ¿el Merry?
-
-241
-00:14:51,910 --> 00:14:56,290
-Sí, el Going Merry ha viajado mucho con nosotros, ¿verdad?
-
-242
-00:14:56,290 --> 00:15:04,010
-Ahora que lo mencionas, hemos viajado en él desde que salimos de mi villa del East Blue.
-
-243
-00:15:04,010 --> 00:15:07,430
-Siempre ha estado ahí para nosotros, pero ya está maltrecho.
-
-244
-00:15:07,430 --> 00:15:10,800
-¡No se preocupen, repararemos al Going Merry completamente!
-
-245
-00:15:10,800 --> 00:15:12,680
-¡Estoy de acuerdo!
-
-246
-00:15:12,680 --> 00:15:14,050
-¡Bueno, coman!
-
-247
-00:15:15,470 --> 00:15:19,270
-Sí, los parches que le hizo Usopp al barco no durarán mucho.
-
-248
-00:15:19,270 --> 00:15:22,320
-¡Ya te lo dije, mi trabajo es de tirador!
-
-249
-00:15:22,320 --> 00:15:28,660
-Sí, deberíamos llevar el barco a un taller para que sea reparado correctamente.
-
-250
-00:15:29,110 --> 00:15:32,410
-¿Quieren decir que hay gente mejor que Usopp reparando?
-
-251
-00:15:32,410 --> 00:15:36,690
-¡Si no haces las cosas bien al principio, luego te costarán el doble!
-
-252
-00:15:36,690 --> 00:15:38,000
-¡Bien, ya lo he decidido!
-
-253
-00:15:38,000 --> 00:15:40,690
-¡Traeremos a un mecánico de barcos para que sea nuestro tripulante!
-
-254
-00:15:41,490 --> 00:15:44,050
-Aunque nos faltan muchas aventuras por recorrer.
-
-255
-00:15:45,130 --> 00:15:47,470
-Necesitamos a alguien que haga ese tipo de cosas.
-
-256
-00:15:47,470 --> 00:15:49,930
-Merry es nuestra casa...
-
-257
-00:15:49,930 --> 00:15:51,390
-¡Y nuestra vida!
-
-258
-00:15:51,390 --> 00:15:55,140
-¡Encontraremos a un mecánico de barcos que cuide a nuestro Merry!
-
-259
-00:15:57,690 --> 00:15:59,270
-Este tipo es extraordinario.
-
-260
-00:15:59,270 --> 00:16:02,730
-Dice las cosas con mucha convicción.
-
-261
-00:16:02,730 --> 00:16:06,070
-¡Sí, esa debería ser nuestra prioridad! ¡Hagámoslo!
-
-262
-00:16:06,070 --> 00:16:08,070
-Entonces, hagamos eso...
-
-263
-00:16:08,070 --> 00:16:10,410
-¡Espero que podamos encontrar a un tipo genial!
-
-264
-00:16:10,410 --> 00:16:12,120
-¡Y también a un músico!
-
-265
-00:16:12,120 --> 00:16:13,490
-No, eso no es necesario.
-
-266
-00:16:20,080 --> 00:16:20,920
-¿Qué? ¿Qué?
-
-267
-00:16:20,920 --> 00:16:22,330
-¿Qué sucede?
-
-268
-00:16:22,330 --> 00:16:23,750
-¡Corran!
-
-269
-00:16:23,750 --> 00:16:25,210
-¡No empujes!
-
-270
-00:16:25,210 --> 00:16:26,840
-¡Debemos alejarnos de él!
-
-271
-00:16:26,840 --> 00:16:28,010
-¡Es una pelea entre compañeros!
-
-272
-00:16:41,190 --> 00:16:42,350
-¡Bellamy!
-
-273
-00:16:42,360 --> 00:16:43,650
-¡Sarquiss!
-
-274
-00:16:43,650 --> 00:16:45,440
-¡Por favor, deténganlos!
-
-275
-00:16:46,150 --> 00:16:47,320
-¡Por favor!
-
-276
-00:16:47,320 --> 00:16:48,740
-¡Detente ya!
-
-277
-00:16:48,740 --> 00:16:51,240
-¡¿Por qué haces esto?!
-
-278
-00:16:51,610 --> 00:16:53,240
-¿Qué está pasando?
-
-279
-00:16:53,240 --> 00:16:55,320
-¡Parece que Sarquiss está sufriendo!
-
-280
-00:16:55,320 --> 00:16:56,650
-¿Por qué?
-
-281
-00:16:57,200 --> 00:16:59,040
-¿Preguntas por qué?
-
-282
-00:16:59,040 --> 00:17:00,830
-Sarquiss.
-
-283
-00:17:00,830 --> 00:17:02,750
-Bellamy.
-
-284
-00:17:03,710 --> 00:17:06,380
-Es porque han avergonzado a mi símbolo.
-
-285
-00:17:06,380 --> 00:17:07,760
-¿Qué otra razón podría haber?
-
-286
-00:17:10,840 --> 00:17:13,720
-Exista o no exista la Isla del Cielo...
-
-287
-00:17:13,720 --> 00:17:17,560
-Sea o no sea un mito la Ciudad de Oro...
-
-288
-00:17:19,600 --> 00:17:22,440
-Nada de eso importa.
-
-289
-00:17:23,060 --> 00:17:26,400
-Tomar ventaja de los ideales enemigos y luego desecharlos...
-
-290
-00:17:27,110 --> 00:17:28,820
-¿No fue ésa mi orden?
-
-291
-00:17:28,820 --> 00:17:30,900
-¿Y bien, Bellamy?
-
-292
-00:17:32,070 --> 00:17:33,360
-Ése es...
-
-293
-00:17:33,360 --> 00:17:35,530
-¡Don Quijote Doflamingo!
-
-294
-00:17:35,530 --> 00:17:38,080
-¡Es uno de los Shichibukai!
-
-295
-00:17:38,080 --> 00:17:40,910
-¡Su cabeza vale más de $300.000.000!
-
-296
-00:17:40,910 --> 00:17:42,750
-¡¿Qué hace aquí semejante tipo?!
-
-297
-00:17:42,750 --> 00:17:47,880
-No necesito a dos basuras siguiéndome, mocosos.
-
-298
-00:17:48,540 --> 00:17:49,630
-¡Maldición!
-
-299
-00:17:49,630 --> 00:17:51,340
-Mi cuerpo está-
-
-300
-00:17:51,340 --> 00:17:52,380
-¡Por favor, detente!
-
-301
-00:17:52,380 --> 00:17:54,090
-¡Ten piedad de mí!
-
-302
-00:17:54,480 --> 00:17:56,930
-¡NO!
-
-303
-00:18:00,600 --> 00:18:01,600
-¡Bellamy!
-
-304
-00:18:06,150 --> 00:18:07,940
-O-Otra oportunidad...
-
-305
-00:18:08,860 --> 00:18:12,650
-¡Por favor dame otra oportunidad!
-
-306
-00:18:12,650 --> 00:18:16,620
-¡Yo... nosotros te seguiremos!
-
-307
-00:18:16,620 --> 00:18:17,940
-¡Bellamy!
-
-308
-00:18:17,950 --> 00:18:19,450
-¡Es suficiente, Bellamy!
-
-309
-00:18:21,790 --> 00:18:27,170
-¡Perdí, pero juro bajo tu símbolo que jamás le daré la espalda a tus ideales!
-
-310
-00:18:27,170 --> 00:18:29,880
-¡Pero así es como yo actúo!
-
-311
-00:18:29,880 --> 00:18:32,510
-Aunque me enfrente a tipos débiles,
-
-312
-00:18:32,510 --> 00:18:35,590
-¡Algún día llegaré a tu posición!
-
-313
-00:18:36,760 --> 00:18:38,550
-Qué subordinado más obediente.
-
-314
-00:18:38,550 --> 00:18:40,140
-Me hace llorar.
-
-315
-00:18:40,140 --> 00:18:45,020
-Bellamy, siempre me gustó eso de ti.
-
-316
-00:18:47,230 --> 00:18:50,440
-La Nueva Era pronto estará sobre nosotros.
-
-317
-00:18:50,440 --> 00:18:51,940
-Haz lo que quieras.
-
-318
-00:18:53,190 --> 00:18:54,400
-Pero...
-
-319
-00:18:54,400 --> 00:18:56,570
-No tienes cabida entre mis subordinados.
-
-320
-00:18:59,240 --> 00:19:02,330
-¡DOFLAMINGO!
-
-321
-00:19:08,130 --> 00:19:11,460
-¡El novato de 55 millones, Bellamy!
-
-322
-00:19:11,460 --> 00:19:13,300
-¡Fue derrotado como un niño!
-
-323
-00:19:14,920 --> 00:19:17,010
-¡La hora ha llegado!
-
-324
-00:19:17,010 --> 00:19:19,340
-¡Ven hacia nosotros y quédate!
-
-325
-00:19:19,340 --> 00:19:23,310
-¡Un mundo donde sólo los auténticos piratas podrán sobrevivir está cerca!
-
-326
-00:19:23,310 --> 00:19:25,600
-Aquellos que carecen de poder, que huyan mientras puedan.
-
-327
-00:19:25,600 --> 00:19:31,060
-¡Gente con poder desmesurado vendrá y la Nueva Era comenzará!
-
-328
-00:19:37,750 --> 00:19:43,390
+402
+00:22:28,070 --> 00:22:29,740
+¡Sí!
+
+403
+00:22:30,450 --> 00:22:32,080
+Por cierto...
+
+404
+00:22:49,180 --> 00:22:51,210
+¿Dónde rayos...
+
+405
+00:22:51,210 --> 00:22:55,190
+...estamos?
+
+406
+00:22:58,190 --> 00:23:03,830
 Si se sienten solos, pueden hablar con nosotros.
 
-329
-00:19:43,390 --> 00:19:48,560
+407
+00:23:03,830 --> 00:23:09,000
 Ustedes, que miran al cielo mientras deambulan,
 
-330
-00:19:48,560 --> 00:19:56,130
+408
+00:23:09,000 --> 00:23:16,570
 son como la luna: olvidan incluso parpadear,
 
-331
-00:19:59,380 --> 00:20:08,530
+409
+00:23:19,820 --> 00:23:28,970
 desaparecen tranquilamente y su reflejo va menguando.
 
-332
-00:20:08,530 --> 00:20:22,160
+410
+00:23:28,970 --> 00:23:42,600
 Estando así, sin cambiar nada, escuchen nuestras palabras.
 
-333
-00:20:22,570 --> 00:20:28,940
+411
+00:23:43,010 --> 00:23:49,380
 Ustedes, que sueñan durante innumerables noches,
 
-334
-00:20:28,940 --> 00:20:34,490
+412
+00:23:49,380 --> 00:23:54,930
 viajeros que simplemente se dejan llevar por las olas...
 
-335
-00:20:34,490 --> 00:20:46,930
+413
+00:23:54,930 --> 00:24:07,370
 Ah, aunque no vuelvan, seguirán avanzando, ¿verdad?
