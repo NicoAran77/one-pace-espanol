@@ -325,8 +325,11 @@ def merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current, titl
         video["title"] = titles.get(video["id"], video.get("title", ""))
     videos = {v["id"]: dict(v) for v in arl_videos}
     torrents = {k: list(v) for k, v in arl_streams.items()}
+    # fedew numera las temporadas distinto: se usa la de arl para cada arco.
+    arc_season = {v["id"].rsplit("_", 1)[0]: v["season"] for v in arl_videos}
     for video in fedew_videos:
         vid, known = video["id"], videos.get(video["id"])
+        video["season"] = arc_season.get(vid.rsplit("_", 1)[0], video["season"])
         if known and vid in titles or not known:
             videos.setdefault(vid, dict(video))
             torrents.setdefault(vid, []).extend(fedew_streams.get(vid, []))
@@ -472,7 +475,7 @@ def main(subs_repo, out):
     write_json(out, "catalog/series/onepace-es.json", {"metas": [
         {k: meta[k] for k in ("id", "type", "name", "poster", "background", "logo", "description", "genres")}]})
     write_json(out, "manifest.json", {
-        "id": "io.github.nicoaran77.onepace.es", "version": "1.1.0",
+        "id": "io.github.nicoaran77.onepace.es", "version": "1.1.1",
         "name": "One Pace en español",
         "description": "One Pace con subtítulos oficiales en español y doblaje latino cuando existen. "
                        "Ve a Descubrir → Series → One Pace en español.",
