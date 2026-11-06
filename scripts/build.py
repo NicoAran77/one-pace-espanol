@@ -51,6 +51,18 @@ ARCS = {
 }
 
 
+SAGAS = [
+    ("East Blue", ["RO", "OR", "SY", "GA", "BA", "AR", "BUGGYS_CREW", "LO"]),
+    ("Alabasta", ["RM", "WH", "COVER_KOBYMEPPO", "LI", "DI", "AL"]),
+    ("Skypiea", ["JA", "SK"]),
+    ("Water 7", ["LR", "WS", "EN", "PEN"]),
+    ("Thriller Bark", ["TB"]),
+    ("Guerra de Marineford", ["SAB", "AM", "IM", "COVER_SHSS", "MA", "PW"]),
+    ("Isla Gyojin", ["RTS", "FI"]),
+    ("Dressrosa", ["PH", "DR"]),
+    ("Cuatro Emperadores", ["ZO", "WC", "REV", "WA"]),
+    ("Saga Final", ["EH"]),
+]
 NOISE_STYLE = re.compile(r"credit|warning|kara|romaji|rom$|kanji|furigana|^ndt", re.I)
 VECTOR = re.compile(r"[mnlbsc\d\s.\-]+")
 ARL_RENUMBER = {
@@ -479,44 +491,42 @@ def main(subs_repo, out):
     if len(published) < MIN_EPISODES or with_es < MIN_SPANISH:
         sys.exit(f"Resultado sospechoso ({len(published)} episodios, {with_es} en espanol): no se publica.")
 
-    published.sort(key=lambda v: (v["season"], v["episode"]))
+    # Stremio solo muestra "Season N": cada temporada es una saga y cada titulo nombra su arco.
+    by_arc = {}
+    for video in published:
+        by_arc.setdefault(video["id"][len(PREFIX):].rsplit("_", 1)[0], []).append(video)
+    season_of = {prefix: i for i, (_, arcs) in enumerate(SAGAS, 1) for prefix in arcs}
+    position, videos_by_saga = {}, []
+    for arc in site_arc_list:
+        episodes = by_arc.pop(arc["prefix"], None)
+        if not episodes:
+            continue
+        season = season_of.get(arc["prefix"], len(SAGAS))  # un arco nuevo va en la ultima saga
+        episodes = sorted(episodes, key=lambda v: v["episode"])
+        for video in episodes:
+            position[season] = position.get(season, 0) + 1
+            number = int(video["id"].rsplit("_", 1)[1])
+            title = video["title"] if len(episodes) == 1 else f"{arc['name']} {number:02}: {video['title']}"
+            videos_by_saga.append({**video, "season": season, "episode": position[season], "title": title})
+    if by_arc:
+        sys.exit(f"Episodios sin arco en onepace.net: {sorted(by_arc)}")
+    guide = "\n".join(f"Temporada {i}: {name}" for i, (name, _) in enumerate(SAGAS, 1))
     meta = {
         "id": SERIES_ID, "type": "series", "name": "One Pace (español)",
         "poster": arl_meta.get("poster"), "background": arl_meta.get("background"),
         "logo": arl_meta.get("logo"), "website": "https://onepace.net",
         "genres": arl_meta.get("genres"),
-        "description": "One Pace recorta el anime de One Piece para acercarlo al ritmo del manga. "
-                       "Esta versión añade los subtítulos oficiales en español y el doblaje latino cuando existen.",
-        "videos": published,
+        "description": "One Pace recorta el anime de One Piece para acercarlo al ritmo del manga, "
+                       "con subtítulos oficiales en español y doblaje latino cuando existen.\n" + guide,
+        "videos": videos_by_saga,
     }
-    # Se conserva sin catalogo para quien ya la tenga en "Seguir viendo".
     write_json(out, f"meta/series/{SERIES_ID}.json", {"meta": meta})
-
-    # Stremio solo nombra las temporadas con numeros: cada arco es su propia serie.
-    by_arc = {}
-    for video in published:
-        by_arc.setdefault(video["id"][len(PREFIX):].rsplit("_", 1)[0], []).append(video)
-    catalog = []
-    for arc in site_arc_list:
-        episodes = by_arc.pop(arc["prefix"], None)
-        if not episodes:
-            continue
-        arc_meta = {
-            "id": f"{PREFIX}arc_{arc['prefix']}", "type": "series", "name": arc["name"],
-            "poster": arc["image"] or meta["poster"], "posterShape": "landscape",
-            "background": arc["image"] or meta["background"], "logo": meta["logo"],
-            "website": meta["website"], "genres": meta["genres"], "description": arc["description"],
-            "videos": [{**v, "season": 1} for v in sorted(episodes, key=lambda v: v["episode"])],
-        }
-        write_json(out, f"meta/series/{arc_meta['id']}.json", {"meta": arc_meta})
-        catalog.append({k: v for k, v in arc_meta.items() if k != "videos"})
-    if by_arc:
-        sys.exit(f"Episodios sin arco en onepace.net: {sorted(by_arc)}")
-    write_json(out, "catalog/series/onepace-es.json", {"metas": catalog})
+    write_json(out, "catalog/series/onepace-es.json", {"metas": [
+        {k: meta[k] for k in ("id", "type", "name", "poster", "background", "logo", "description", "genres")}]})
     write_json(out, "manifest.json", {
-        "id": "io.github.nicoaran77.onepace.es", "version": "1.2.0",
+        "id": "io.github.nicoaran77.onepace.es", "version": "1.3.0",
         "name": "One Pace en español",
-        "description": "One Pace por arcos, con subtítulos oficiales en español y doblaje latino cuando existen. "
+        "description": "One Pace por sagas, con subtítulos oficiales en español y doblaje latino cuando existen. "
                        "Ve a Descubrir → Series → One Pace en español.",
         "logo": arl_meta.get("logo"),
         "resources": [{"name": "meta", "types": ["series"], "idPrefixes": [PREFIX]},

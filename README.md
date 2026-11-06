@@ -10,7 +10,20 @@ En Stremio ve a **Addons → Add addon** y pega:
 https://nicoaran77.github.io/one-pace-espanol/manifest.json
 ```
 
-Los arcos aparecen en orden en **Descubrir → Series → One Pace en español**. Cada arco es una serie aparte, porque Stremio solo nombra las temporadas con números. No aparecen en el buscador, porque un sitio estático no puede responder búsquedas.
+La serie aparece en **Descubrir → Series → One Pace en español**, con una temporada por saga. Stremio solo muestra «Season N», así que el título de cada episodio indica su arco. No aparece en el buscador, porque un sitio estático no puede responder búsquedas.
+
+| Temporada | Saga | Arcos |
+|---|---|---|
+| 1 | East Blue | Romance Dawn a Loguetown |
+| 2 | Alabasta | Reverse Mountain a Alabasta |
+| 3 | Skypiea | Jaya y Skypiea |
+| 4 | Water 7 | Long Ring Long Land a Post-Enies Lobby |
+| 5 | Thriller Bark | Thriller Bark |
+| 6 | Guerra de Marineford | Sabaody a Post-War |
+| 7 | Isla Gyojin | Return to Sabaody y Fishman Island |
+| 8 | Dressrosa | Punk Hazard y Dressrosa |
+| 9 | Cuatro Emperadores | Zou a Wano |
+| 10 | Saga Final | Egghead |
 
 ## Opciones de cada episodio
 
