@@ -10,7 +10,7 @@ En Stremio ve a **Addons → Add addon** y pega:
 https://nicoaran77.github.io/one-pace-espanol/manifest.json
 ```
 
-La serie aparece en **Descubrir → Series → One Pace en español**. No aparece en el buscador, porque un sitio estático no puede responder búsquedas.
+Los arcos aparecen en orden en **Descubrir → Series → One Pace en español**. Cada arco es una serie aparte, porque Stremio solo nombra las temporadas con números. No aparecen en el buscador, porque un sitio estático no puede responder búsquedas.
 
 ## Opciones de cada episodio
 

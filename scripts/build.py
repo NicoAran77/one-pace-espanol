@@ -269,32 +269,50 @@ def spanish_files(subs_repo):
     return found
 
 
-def site_titles():
-    """Titulos oficiales por id, leidos de la pagina en ingles de onepace.net."""
-    page = fetch("https://onepace.net/en/watch").decode("utf-8", "replace")
+def read_site_page(locale, duration, anime, manga):
+    """Devuelve (titulos por id en orden, arcos en orden) de una pagina de onepace.net."""
+    page = fetch(f"https://onepace.net/{locale}/watch").decode("utf-8", "replace")
     page = re.sub(r"<script.*?</script>|<style.*?</style>|<svg.*?</svg>", "", page, flags=re.S)
-    tokens = [html.unescape(x).strip() for x in re.split(r"<[^>]+>", page)]
-    tokens = [x for x in tokens if x and x not in ("·", "•")]
-    titles, arc = {}, None
+    found = [(html.unescape(m.group(1)).strip(), m.start()) for m in re.finditer(r">([^<]+)<", page)]
+    found = [x for x in found if x[0] and x[0] not in ("·", "•")]
+    tokens = [x[0] for x in found]
+    titles, arcs, current_arc = {}, [], None
     for i, token in enumerate(tokens):
-        if token != "Duration":
+        if token != duration:
             continue
         k = i - 1
-        while k > 0 and i - k < 12 and tokens[k] != "Covered anime episodes":
+        while k > 0 and i - k < 12 and tokens[k] != anime:
             k -= 1
-        start = k if tokens[k] == "Covered anime episodes" else i
-        if tokens[start - 2] == "Covered manga chapters":
+        start = k if tokens[k] == anime else i
+        if tokens[start - 2] == manga:
             start -= 2
-        elif tokens[start - 3] == "Covered manga chapters":
+        elif tokens[start - 3] == manga:
             start -= 3
         title = tokens[start - 1]
         if tokens[start - 2] == ":" and tokens[start - 3].isdigit():
-            prefix = ARC_BY_NORM.get(norm(arc or ""))
-            if prefix and title != "Untitled":
-                titles[f"{prefix}_{int(tokens[start - 3])}"] = title
-        elif tokens[start - 2] != "Special:":
-            arc = title
-    return titles
+            titles[(len(arcs) - 1, int(tokens[start - 3]))] = title
+        elif tokens[start - 2] != "Special:" and tokens[start - 2] != "Especial:":
+            images = re.findall(r"url=%2F_next%2Fstatic%2Fmedia%2F([^&\"]+?\.(?:jpe?g|png|webp))", page[:found[i][1]])
+            image = f"https://onepace.net/_next/static/media/{urllib.parse.unquote(images[-1])}" if images else None
+            arcs.append({"name": title, "description": tokens[i + 2], "image": image})
+    return titles, arcs
+
+
+def site_arcs():
+    """Titulos oficiales por id y arcos con nombre, imagen y descripcion en espanol."""
+    english, arcs = read_site_page("en", "Duration", "Covered anime episodes", "Covered manga chapters")
+    _, spanish = read_site_page("es-419", "Duración", "Episodios del anime incluidos", "Episodios del manga incluidos")
+    if len(spanish) == len(arcs):
+        for arc, translated in zip(arcs, spanish):
+            arc["description"] = translated["description"]
+    titles = {}
+    for (index, number), title in english.items():
+        prefix = ARC_BY_NORM.get(norm(arcs[index]["name"]))
+        if prefix and title != "Untitled":
+            titles[f"{prefix}_{number}"] = title
+    for arc in arcs:
+        arc["prefix"] = ARC_BY_NORM.get(norm(arc["name"]))
+    return titles, arcs
 
 
 def renumber(meta, streams, mapping):
@@ -409,7 +427,7 @@ def main(subs_repo, out):
     pixeldrain = parse_pixeldrain(lists)
     es_files = spanish_files(subs_repo)
     english = english_starts(subs_repo)
-    titles = site_titles()
+    titles, site_arc_list = site_arcs()
     videos, torrents = merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current, titles)
 
     for folder in ("meta", "stream", "subs", "catalog"):
@@ -471,13 +489,34 @@ def main(subs_repo, out):
                        "Esta versión añade los subtítulos oficiales en español y el doblaje latino cuando existen.",
         "videos": published,
     }
+    # Se conserva sin catalogo para quien ya la tenga en "Seguir viendo".
     write_json(out, f"meta/series/{SERIES_ID}.json", {"meta": meta})
-    write_json(out, "catalog/series/onepace-es.json", {"metas": [
-        {k: meta[k] for k in ("id", "type", "name", "poster", "background", "logo", "description", "genres")}]})
+
+    # Stremio solo nombra las temporadas con numeros: cada arco es su propia serie.
+    by_arc = {}
+    for video in published:
+        by_arc.setdefault(video["id"][len(PREFIX):].rsplit("_", 1)[0], []).append(video)
+    catalog = []
+    for arc in site_arc_list:
+        episodes = by_arc.pop(arc["prefix"], None)
+        if not episodes:
+            continue
+        arc_meta = {
+            "id": f"{PREFIX}arc_{arc['prefix']}", "type": "series", "name": arc["name"],
+            "poster": arc["image"] or meta["poster"], "posterShape": "landscape",
+            "background": arc["image"] or meta["background"], "logo": meta["logo"],
+            "website": meta["website"], "genres": meta["genres"], "description": arc["description"],
+            "videos": [{**v, "season": 1} for v in sorted(episodes, key=lambda v: v["episode"])],
+        }
+        write_json(out, f"meta/series/{arc_meta['id']}.json", {"meta": arc_meta})
+        catalog.append({k: v for k, v in arc_meta.items() if k != "videos"})
+    if by_arc:
+        sys.exit(f"Episodios sin arco en onepace.net: {sorted(by_arc)}")
+    write_json(out, "catalog/series/onepace-es.json", {"metas": catalog})
     write_json(out, "manifest.json", {
-        "id": "io.github.nicoaran77.onepace.es", "version": "1.1.1",
+        "id": "io.github.nicoaran77.onepace.es", "version": "1.2.0",
         "name": "One Pace en español",
-        "description": "One Pace con subtítulos oficiales en español y doblaje latino cuando existen. "
+        "description": "One Pace por arcos, con subtítulos oficiales en español y doblaje latino cuando existen. "
                        "Ve a Descubrir → Series → One Pace en español.",
         "logo": arl_meta.get("logo"),
         "resources": [{"name": "meta", "types": ["series"], "idPrefixes": [PREFIX]},
