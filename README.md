@@ -32,6 +32,8 @@ La serie aparece en **Descubrir → Series → One Pace en español**, con una t
 - **Pixeldrain, doblaje:** doblaje latino, solo en los episodios que lo tienen.
 - **Episodios aún sin español:** se incluyen con subtítulos en inglés para poder ver la serie seguida.
 
+Los subtítulos externos del addon (español e inglés) se publican sin créditos, avisos ni karaoke, para que no tapen la imagen. Los que vienen dentro del video (Pixeldrain o las pistas propias del torrent) no se pueden limpiar.
+
 ## Actualización
 
 Una tarea de GitHub Actions regenera el addon cada día con `scripts/build.py`. Si una fuente falla o devuelve muy pocos episodios, se conserva la versión publicada. `report.json` resume la última generación.

@@ -1950,77 +1950,108 @@ Apuesto mi vida.
 ¡Ahí vienen!
 
 474
-00:28:49,720 --> 00:28:51,140
-Apártense.
+00:29:03,290 --> 00:29:04,570
+Son ellos...
 
 475
-00:28:57,980 --> 00:29:02,940
-Oigan, ¿esos dos idiotas serían parte de la tripulación de Zoro?
+00:29:04,570 --> 00:29:07,810
+¿Por qué demonios esos tipos...?
 
 476
-00:29:02,940 --> 00:29:04,110
-¿De Zoro?
+00:29:07,810 --> 00:29:10,520
+Si esos tipos no
+pueden contra ellos,
 
 477
-00:29:04,110 --> 00:29:05,980
-Eran demasiado débiles.
+00:29:10,520 --> 00:29:12,680
+no sólo será esta isla,
 
 478
-00:29:05,980 --> 00:29:07,650
-No valía la pena matarlos.
+00:29:12,680 --> 00:29:15,530
+sino que no habrá ninguna
+esperanza para todo el East Blue.
 
 479
-00:29:07,650 --> 00:29:09,450
-Tienes razón.
+00:29:15,530 --> 00:29:19,510
+Recuerden la cara de esos cuatro...
 
 480
-00:29:22,700 --> 00:29:24,410
-¡¿Qué pasa?!
+00:29:19,510 --> 00:29:23,120
+...que han venido
+a cambiar el futuro.
 
 481
-00:29:26,870 --> 00:29:29,250
-¿Quién de ustedes es Arlong?
+00:29:31,850 --> 00:29:33,270
+Apártense.
 
 482
-00:29:33,160 --> 00:29:37,990
-Los sentimientos que sobresalen no se conectan...
+00:29:40,110 --> 00:29:45,070
+Oigan, ¿esos dos idiotas serían parte de la tripulación de Zoro?
 
 483
-00:29:38,140 --> 00:29:42,830
-...aunque me sujeto fuertemente a tu mano.
+00:29:45,070 --> 00:29:46,240
+¿De Zoro?
 
 484
-00:29:43,060 --> 00:29:47,750
-Aun estando sola, comenzaré a caminar,
+00:29:46,240 --> 00:29:48,110
+Eran demasiado débiles.
 
 485
-00:29:47,980 --> 00:29:52,800
-así que no dejes de mirarme por más lejos que vaya.
+00:29:48,110 --> 00:29:49,780
+No valía la pena matarlos.
 
 486
-00:29:57,870 --> 00:30:02,620
-Lo he estado pensando desde esta mañana.
+00:29:49,780 --> 00:29:51,580
+Tienes razón.
 
 487
-00:30:02,790 --> 00:30:07,520
-¿Por qué son tan cálidos?
+00:30:04,830 --> 00:30:06,540
+¡¿Qué pasa?!
 
 488
-00:30:07,520 --> 00:30:17,970
-Quién sabe desde cuándo no se alejan de mí.
+00:30:09,000 --> 00:30:11,380
+¿Quién de ustedes es Arlong?
 
 489
-00:30:18,890 --> 00:30:23,610
-Quiero atrapar los sentimientos que se me escapan...
+00:30:15,290 --> 00:30:20,120
+Los sentimientos que sobresalen no se conectan...
 
 490
-00:30:23,890 --> 00:30:28,450
-...e incluso me rebaso a mí misma.
+00:30:20,270 --> 00:30:24,960
+...aunque me sujeto fuertemente a tu mano.
 
 491
-00:30:28,690 --> 00:30:33,460
-Quiero abrazar los sueños que salieron volando.
+00:30:25,190 --> 00:30:29,880
+Aun estando sola, comenzaré a caminar,
 
 492
-00:30:33,610 --> 00:30:38,520
+00:30:30,110 --> 00:30:34,930
+así que no dejes de mirarme por más lejos que vaya.
+
+493
+00:30:40,000 --> 00:30:44,750
+Lo he estado pensando desde esta mañana.
+
+494
+00:30:44,920 --> 00:30:49,650
+¿Por qué son tan cálidos?
+
+495
+00:30:49,650 --> 00:31:00,100
+Quién sabe desde cuándo no se alejan de mí.
+
+496
+00:31:01,020 --> 00:31:05,740
+Quiero atrapar los sentimientos que se me escapan...
+
+497
+00:31:06,020 --> 00:31:10,580
+...e incluso me rebaso a mí misma.
+
+498
+00:31:10,820 --> 00:31:15,590
+Quiero abrazar los sueños que salieron volando.
+
+499
+00:31:15,740 --> 00:31:20,650
 Si estamos juntos, puedo correr.

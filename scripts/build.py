@@ -65,6 +65,19 @@ SAGAS = [
 ]
 NOISE_STYLE = re.compile(r"credit|warning|kara|romaji|rom$|kanji|furigana|^ndt", re.I)
 VECTOR = re.compile(r"[mnlbsc\d\s.\-]+")
+# Creditos escritos en estilos de dialogo ("En colaboracion con ... Fansub").
+CREDIT_TEXT = re.compile(r"fansub|colaboraci[oó]n con|^(traducci[oó]n|edici[oó]n|timing|tiempos|typesetting|translation|"
+                         r"quality control|control de calidad|video editing|karaoke)\b.*(\n|:)", re.I)
+
+
+def garbage(text):
+    """Cadenas aleatorias de efectos de grano (p. ej. "tH4ThY:aJrNAqc"), no dialogo."""
+    def noise(line):
+        flips = sum(1 for a, b in zip(line, line[1:]) if a.isalpha() and b.isalpha() and a.isupper() != b.isupper())
+        return " " not in line and len(line) >= 12 and flips >= 5
+    return all(noise(line) for line in text.split("\n"))
+
+
 ARL_RENUMBER = {
     # arl numera Long Ring Long Land desde 1; onepace.net desde 0.
     **{f"LR_{n}": f"LR_{n - 1}" for n in range(1, 8)},
@@ -128,6 +141,11 @@ def release_id(name):
     return f"{prefix}_{int(m.group(2))}" if prefix else None
 
 
+# Encabezado de cada grupo de descargas; el texto puede ir en un span interior.
+GROUP = (r'<span id="[^"]*"[^>]*>\s*(?:<span[^>]*>)?{}</span>(?:\s*<span[^>]*>[^<]*</span>)?'
+         r'\s*(?:</span>)?\s*<ul role="list"[^>]*>(.*?)</ul>')
+
+
 def parse_site():
     page = fetch("https://onepace.net/es-419/watch").decode("utf-8", "replace")
     current = {}  # hash -> nombre publicado
@@ -135,7 +153,7 @@ def parse_site():
         current[ih.lower()] = urllib.parse.unquote_plus(html.unescape(dn))
     lists = {"sub": [], "dub": []}
     groups = re.findall(
-        r'<span id="[^"]*"[^>]*>(Subtitulos|Subtítulos|Doblaje) en espa[^<]*</span><ul role="list"[^>]*>(.*?)</ul>',
+        GROUP.format(r"(Subtitulos|Subtítulos|Doblaje) en espa[^<]*"),
         page, re.S)
     for label, body in groups:
         kind = "dub" if label == "Doblaje" else "sub"
@@ -149,7 +167,7 @@ def parse_site():
     # Listas en ingles, para los episodios que aun no tienen espanol.
     english = fetch("https://onepace.net/en/watch").decode("utf-8", "replace")
     lists["en"] = []
-    for body in re.findall(r'<span id="[^"]*"[^>]*>English Subtitles</span><ul role="list"[^>]*>(.*?)</ul>', english, re.S):
+    for body in re.findall(GROUP.format("English Subtitles[^<]*"), english, re.S):
         options = {}
         for list_id, res in re.findall(
                 r'pixeldrain\.[a-z]+/l/([A-Za-z0-9]+)".*?<span[^>]*>(\d+)p</span>', body, re.S):
@@ -209,7 +227,7 @@ def parse_ass(path):
             text = re.sub(r"\{[^}]*\}", "", raw)
             text = text.replace("\\N", "\n").replace("\\n", "\n").replace("\\h", " ")
             text = "\n".join(x.strip() for x in text.split("\n") if x.strip())
-            if not text or VECTOR.fullmatch(text):
+            if not text or VECTOR.fullmatch(text) or CREDIT_TEXT.search(text) or garbage(text):
                 continue
             start, end = ass_time(row["Start"]), ass_time(row["End"])
             if end <= start or (start, end, text) in seen:
@@ -230,6 +248,38 @@ def parse_ass(path):
             last[text] = len(events)
             events.append((start, end, text))
     return [e for e in events if e[1] - e[0] >= 0.2]
+
+
+CREDIT_WORDS = re.compile(r"video editing|timing|typesetting|quality control|translation|encoding|"
+                          r"edici[oó]n|traducci[oó]n|tiempos|control de calidad|karaoke", re.I)
+
+
+def clean_srt(raw):
+    """Limpia un .srt ajeno: quita avisos, creditos (por su fuente), sombras duplicadas y etiquetas."""
+    blocks = []
+    for block in re.split(r"\n\s*\n", raw.replace("\r", "").strip()):
+        lines = block.split("\n")
+        if len(lines) < 3 or "-->" not in lines[1]:
+            continue
+        body = "\n".join(lines[2:])
+        face = re.search(r'face="([^"]*)"', body)
+        text = re.sub(r"<[^>]*>|\{[^}]*\}", "", body).strip()
+        blocks.append((lines[1], face.group(1) if face else "", text))
+    credit_fonts = {f for _, f, t in blocks if f and CREDIT_WORDS.fullmatch(t.split("\n")[0].strip())}
+    lengths = {}
+    for _, face, text in blocks:
+        lengths.setdefault(face, []).append(len(text))
+    # Fuentes con casi solo silabas sueltas son karaoke.
+    credit_fonts |= {f for f, v in lengths.items() if f and len(v) >= 20 and sum(v) / len(v) <= 3}
+    out, seen = [], set()
+    for timing, face, text in blocks:
+        if not text or face in credit_fonts or "mpv.io" in text or VECTOR.fullmatch(text) or garbage(text):
+            continue
+        if (timing, text) in seen:
+            continue
+        seen.add((timing, text))
+        out.append(f"{len(out) + 1}\n{timing}\n{text}\n")
+    return "\n".join(out)
 
 
 def to_srt(events):
@@ -395,7 +445,7 @@ def merge_videos(arl_meta, arl_streams, fedew_meta, fedew_streams, current, titl
     return videos, torrents
 
 
-def torrent_streams(entries, current, spanish, english):
+def torrent_streams(entries, current, spanish, english, old_english=None):
     """Los subtitulos propios siguen la edicion actual: solo van con torrents actuales."""
     unique = {}
     for s in entries:
@@ -408,15 +458,18 @@ def torrent_streams(entries, current, spanish, english):
         name = current.get(ih, "")
         res = re.search(r"(\d{3,4})p", name)
         quality = f"Torrent {res.group(1)}p" if res else "Torrent"
-        subs = [x for x in s.get("subtitles", []) if x.get("lang") == "eng"]
         if ih in current:
+            # Los ingleses del addon de arl traen creditos y avisos que tapan la imagen:
+            # se usan los propios, ya filtrados.
+            subs = spanish + english
             if spanish:
                 note = "Español: elige «Español» en subtítulos"
-                subs = spanish + subs
             else:
-                subs = english or subs
                 note = "Aún sin español: subtítulos en inglés" if subs else "Aún sin español"
         else:
+            subs = [x for x in s.get("subtitles", []) if x.get("lang") == "eng"]
+            if subs and old_english:
+                subs = old_english
             note = "Edición antigua: subtítulos en inglés" if subs else "Edición antigua"
         stream = {
             "name": "One Pace\nTorrent",
@@ -489,14 +542,28 @@ def main(subs_repo, out):
         has_spanish = (bool(subtitles) and fresh_torrent) or vid in pixeldrain["sub"]
         english_subs = []
         en_path = es_files.get(vid, {}).get("en")
-        if not has_spanish and en_path:
+        if en_path:
             events = parse_ass(en_path)
             if events:
                 with open(os.path.join(out, "subs", f"{vid}_en.srt"), "w", encoding="utf-8", newline="\n") as f:
                     f.write(to_srt(events))
                 english_subs = [{"id": f"{vid}_en", "lang": "eng", "url": f"{BASE_URL}/subs/{vid}_en.srt"}]
 
-        streams = torrent_streams(torrents.get(vid, []), current, subtitles, english_subs)
+        # Los torrents antiguos usan los ingleses de arl: se copian limpios de creditos.
+        old_english = None
+        if not fresh_torrent:
+            remote = next((x["url"] for s in torrents.get(vid, []) for x in s.get("subtitles", [])
+                           if x.get("lang") == "eng"), None)
+            if remote:
+                try:
+                    cleaned = clean_srt(fetch(remote).decode("utf-8-sig", "replace"))
+                except Exception:
+                    cleaned = ""
+                if cleaned:
+                    with open(os.path.join(out, "subs", f"{vid}_en_antiguo.srt"), "w", encoding="utf-8", newline="\n") as f:
+                        f.write(cleaned)
+                    old_english = [{"id": f"{vid}_en_antiguo", "lang": "eng", "url": f"{BASE_URL}/subs/{vid}_en_antiguo.srt"}]
+        streams = torrent_streams(torrents.get(vid, []), current, subtitles, english_subs, old_english)
         if vid in pixeldrain["sub"]:
             streams.append(http_stream(pixeldrain["sub"][vid], "Subtítulos latinos incluidos en el video", "onepace-es-sub"))
         if vid in pixeldrain["dub"]:
@@ -522,6 +589,8 @@ def main(subs_repo, out):
         entry.setdefault("released", "2013-01-01T00:00:00.000Z")
         published.append(entry)
 
+    if len(lists["sub"]) < 20 or len(lists["en"]) < 20:
+        sys.exit(f"onepace.net cambio de formato ({len(lists['sub'])} listas en espanol, {len(lists['en'])} en ingles): no se publica.")
     if len(published) < MIN_EPISODES or with_es < MIN_SPANISH:
         sys.exit(f"Resultado sospechoso ({len(published)} episodios, {with_es} en espanol): no se publica.")
 
@@ -558,7 +627,7 @@ def main(subs_repo, out):
     write_json(out, "catalog/series/onepace-es.json", {"metas": [
         {k: meta[k] for k in ("id", "type", "name", "poster", "background", "logo", "description", "genres")}]})
     write_json(out, "manifest.json", {
-        "id": "io.github.nicoaran77.onepace.es", "version": "1.3.1",
+        "id": "io.github.nicoaran77.onepace.es", "version": "1.3.2",
         "name": "One Pace en español",
         "description": "One Pace por sagas, con subtítulos oficiales en español y doblaje latino cuando existen. "
                        "Ve a Descubrir → Series → One Pace en español.",

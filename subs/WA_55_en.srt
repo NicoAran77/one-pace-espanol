@@ -39,616 +39,1231 @@ The world has truly entered
 the Great Pirate Era!
 
 10
-00:01:51,010 --> 00:01:54,180
-"Oden's Travel Record"
-
-11
-00:01:51,800 --> 00:01:52,930
-D?
-
-12
-00:01:56,430 --> 00:02:00,680
-I never thought I'd be able to meet you!
-
-13
-00:02:01,140 --> 00:02:03,390
-"O-Oden"...
-
-14
-00:02:04,020 --> 00:02:06,020
-Is that my father's journal?!
-
-15
-00:02:06,060 --> 00:02:12,610
+00:01:51,050 --> 00:01:59,060
 Straw Hat Luffy
 
+11
+00:01:55,010 --> 00:01:57,680
+Whoa, that scared me...
+
+12
+00:01:58,970 --> 00:02:01,730
+You pirates sure know some funny tricks!
+
+13
+00:02:01,600 --> 00:02:09,900
+Several Years Ago
+
+14
+00:02:01,730 --> 00:02:04,020
+Teach me how to do it too!
+
+15
+00:02:01,760 --> 00:02:09,900
+Onigashima
+During Kaido's Absence
+
 16
-00:02:06,560 --> 00:02:12,610
+00:02:05,310 --> 00:02:06,060
+Huh?
+
+17
+00:02:06,810 --> 00:02:09,280
+Um... Hello?
+
+18
+00:02:10,780 --> 00:02:11,360
+What?!
+
+19
+00:02:13,320 --> 00:02:15,160
+Ace!
+
+20
+00:02:15,160 --> 00:02:16,950
+What happened?!
+
+21
+00:02:16,950 --> 00:02:20,080
+We were having a blast
+until just a second ago!
+
+22
+00:02:20,950 --> 00:02:22,210
+Wait, are you d–
+
+23
+00:02:22,960 --> 00:02:28,210
+Stay with me, Aaace!
+
+24
+00:02:31,630 --> 00:02:32,970
+I dozed off.
+
+25
+00:02:32,970 --> 00:02:36,010
+Don't freak me out like that!
+I thought you were dead!
+
+26
+00:02:36,010 --> 00:02:38,390
+Ah, my bad. Sorry about that.
+
+27
+00:02:39,760 --> 00:02:41,890
+I was really worried about you!
+
+28
+00:02:42,890 --> 00:02:46,020
+Well, whatever... Should we call it a night?
+
+29
+00:02:46,020 --> 00:02:48,270
+You seem really tired...
+
+30
+00:02:48,270 --> 00:02:50,070
+What do you mean, Yamato?!
+
+31
+00:02:50,070 --> 00:02:52,650
+We've still got a lot to talk about!
+
+32
+00:02:53,400 --> 00:02:57,280
+I gotta go back to my crew in the morning.
+
+33
+00:02:57,280 --> 00:02:59,870
+It'd be a waste to sleep tonight.
+
+34
+00:03:03,000 --> 00:03:05,160
+In that case, don't fall asleep again!
+
+35
+00:03:05,160 --> 00:03:07,040
+I said I was sorry...
+
+36
+00:03:07,040 --> 00:03:09,290
+Now, where were we?
+
+37
+00:03:09,290 --> 00:03:12,050
+You were talking about
+your younger brother again!
+
+38
+00:03:12,920 --> 00:03:17,430
+And you were talking about
+how much you wanna be Oden again!
+
+39
+00:03:18,050 --> 00:03:19,350
+Not exactly, Ace.
+
+40
+00:03:19,350 --> 00:03:22,100
+I don't just "want to," I will become him!
+
+41
+00:03:22,520 --> 00:03:24,810
+I'll make it happen for sure.
+
+42
+00:03:24,810 --> 00:03:26,560
+Because this right here...
+
+43
+00:03:26,560 --> 00:03:28,400
+is the story of our future!
+
+44
+00:03:26,560 --> 00:03:33,070
+"Oden's Travel Record"
+
+45
+00:03:30,690 --> 00:03:31,820
+D?
+
+46
+00:03:35,320 --> 00:03:39,570
+I never thought I'd be able to meet you!
+
+47
+00:03:40,030 --> 00:03:42,290
+"O-Oden"...
+
+48
+00:03:42,910 --> 00:03:44,910
+Is that my father's journal?!
+
+49
+00:03:45,460 --> 00:03:51,500
 It contains every detail about his grand life
 and the world he experienced!
 
-17
-00:02:13,740 --> 00:02:17,580
+50
+00:03:52,630 --> 00:03:56,300
 On that day, I found it at
 the river below Oden Castle.
 
-18
-00:02:17,580 --> 00:02:21,160
+51
+00:03:57,050 --> 00:04:00,640
 Someone in the castle
 must have kept it from burning...
 
-19
-00:02:21,160 --> 00:02:22,790
+52
+00:04:00,640 --> 00:04:02,260
 Lord Oden's...
 
-20
-00:02:24,420 --> 00:02:25,750
+53
+00:04:03,890 --> 00:04:05,220
 Momonosuke!
 
-21
-00:02:26,880 --> 00:02:30,710
+54
+00:04:06,350 --> 00:04:10,190
 He wrote a lot about you as well.
 
-22
-00:02:32,760 --> 00:02:35,640
+55
+00:04:12,230 --> 00:04:15,110
 You were born on Whitebeard's ship, right?!
 
-23
-00:02:35,970 --> 00:02:37,760
+56
+00:04:15,440 --> 00:04:17,240
 And then you went on to Roger's ship!
 
-24
-00:02:39,010 --> 00:02:40,310
+57
+00:04:18,490 --> 00:04:19,780
 Mm-hmm.
 
-25
-00:02:40,930 --> 00:02:47,230
+58
+00:04:20,410 --> 00:04:26,700
 Th-Though, since I was so young,
 I do not remember much...
 
-26
-00:02:47,230 --> 00:02:49,940
+59
+00:04:26,700 --> 00:04:29,960
 Whitebeard, Roger, and Oden...
 
-27
-00:02:52,070 --> 00:02:53,490
+60
+00:04:29,960 --> 00:04:31,290
 They all said...
 
-28
-00:02:57,120 --> 00:02:59,370
+61
+00:04:32,040 --> 00:04:34,500
 that twenty years in the future,
 
-29
-00:03:02,250 --> 00:03:06,540
+62
+00:04:34,500 --> 00:04:39,260
 the New World was sure to be overrun
 by young and powerful pirates!
 
-30
-00:03:08,000 --> 00:03:09,340
+63
+00:04:39,260 --> 00:04:40,720
 That future is now!
 
-31
-00:03:12,920 --> 00:03:16,880
+64
+00:04:45,470 --> 00:04:49,140
 I was sure that Ace would be
 among them, leading the pack...
 
-32
-00:03:16,880 --> 00:03:22,560
-But when he died, I remembered
+65
+00:04:50,440 --> 00:04:54,270
+But when he died, I remembered...
+
+66
+00:04:55,110 --> 00:04:56,570
 something from that night!
 
-33
-00:03:25,560 --> 00:03:26,190
+67
+00:04:59,570 --> 00:05:00,200
 What...?
 
-34
-00:03:28,770 --> 00:03:30,150
+68
+00:05:02,780 --> 00:05:04,160
 Crap!
 
-35
-00:03:30,150 --> 00:03:31,730
+69
+00:05:04,160 --> 00:05:05,740
 I let it slip!
 
-36
-00:03:31,730 --> 00:03:34,440
+70
+00:05:05,740 --> 00:05:08,450
 I wasn't supposed to say that!
 
-37
-00:03:34,440 --> 00:03:36,150
+71
+00:05:08,450 --> 00:05:10,160
 You didn't hear that! Forget about it!
 
-38
-00:03:36,700 --> 00:03:38,700
+72
+00:05:10,710 --> 00:05:12,710
 And don't you dare laugh either!
 
-39
-00:03:38,700 --> 00:03:40,780
+73
+00:05:12,710 --> 00:05:14,790
 Sabo and I won't stand for it!
 
-40
-00:03:43,490 --> 00:03:45,330
+74
+00:05:16,000 --> 00:05:19,510
+I haven't left this country even once...
+
+75
+00:05:19,510 --> 00:05:23,800
+so I haven't seen much with my own eyes...
+
+76
+00:05:24,390 --> 00:05:28,930
+including Ace's brother
+and the world Oden traveled.
+
+77
+00:05:30,560 --> 00:05:33,150
+But, at that moment...
+
+78
+00:05:33,150 --> 00:05:35,110
+I saw something clearly!
+
+79
+00:05:35,980 --> 00:05:37,820
 That's at the end...
 
-41
-00:03:45,710 --> 00:03:47,330
+80
+00:05:38,190 --> 00:05:39,820
 of my kid brother's dream.
 
-42
-00:03:49,880 --> 00:03:54,760
+81
+00:05:44,070 --> 00:05:46,580
+We gotta set out to sea someday!
+
+82
+00:05:47,080 --> 00:05:50,580
+Let's get out of this country and live free!
+
+83
+00:05:50,580 --> 00:05:55,880
+I wanna see the world out there
+and write a book about it!
+
+84
+00:05:55,880 --> 00:05:58,880
+Navigation is the one thing I do love to study!
+
+85
+00:05:58,880 --> 00:06:02,050
+Let's get even stronger
+and become pirates someday!
+
+86
+00:06:04,300 --> 00:06:07,510
+That was my plan anyway!
+You don't have to tell me twice!
+
+87
+00:06:07,930 --> 00:06:14,060
+When I'm a pirate, I'll beat up everyone
+and become the biggest, baddest one of all!
+
+88
+00:06:14,060 --> 00:06:17,270
+That's how I'll leave my mark on the world!
+
+89
+00:06:17,940 --> 00:06:23,150
+It doesn't matter if the whole world
+rejects or despises me,
+
+90
+00:06:23,530 --> 00:06:26,280
+I'll become a great pirate and show them all!
+
+91
+00:06:27,580 --> 00:06:31,500
+The government is telling us
+not to go to the final island,
+
+92
+00:06:31,500 --> 00:06:34,370
+which is said to contain treasure untold!
+
+93
+00:06:35,330 --> 00:06:38,790
+That makes it all the more tantalizing!
+
+94
+00:06:39,170 --> 00:06:42,800
+If we can reach it, we will be,
+in both name and in deed...
+
+95
+00:06:42,800 --> 00:06:45,260
+the world's greatest pirate crew!
+
+96
+00:06:45,760 --> 00:06:47,510
+The world's greatest?
+
+97
+00:06:49,510 --> 00:06:51,220
+I got it!
+
+98
+00:06:51,220 --> 00:06:53,390
+Alright then...!
+
+99
+00:06:53,390 --> 00:06:55,060
+That's right!
+
+100
+00:06:55,060 --> 00:06:56,730
+And then...
+
+101
+00:06:58,900 --> 00:07:02,530
+– I'll...
+– I'm gonna...!
+
+102
+00:07:06,780 --> 00:07:09,660
+Man, I was wondering what you would say...
+
+103
+00:07:09,660 --> 00:07:11,660
+That's just a child's fantasy!
+
+104
+00:07:13,410 --> 00:07:15,920
+You're a riot, Luffy!
+
+105
+00:07:15,920 --> 00:07:19,040
+I can't wait to see what future you is like!
+
+106
+00:07:27,220 --> 00:07:32,100
 Sure, we laughed when Luffy
 told us, but that's okay!
 
-43
-00:03:54,760 --> 00:03:58,130
+107
+00:07:32,100 --> 00:07:35,480
 We're the only ones
 who are allowed to laugh...
 
-44
-00:03:58,130 --> 00:03:59,760
+108
+00:07:35,480 --> 00:07:37,100
 'cause we believe in him!
 
-45
-00:03:59,760 --> 00:04:03,510
+109
+00:07:37,100 --> 00:07:40,860
 We really think he can do it, so–
 
-46
-00:04:03,510 --> 00:04:04,520
+110
+00:07:40,860 --> 00:07:41,860
 Ace!
 
-47
-00:04:06,390 --> 00:04:07,140
+111
+00:07:43,730 --> 00:07:44,490
 Huh?
 
-48
-00:04:08,020 --> 00:04:09,150
+112
+00:07:45,360 --> 00:07:46,490
 Hey!
 
-49
-00:04:09,150 --> 00:04:10,650
+113
+00:07:46,490 --> 00:07:47,990
 What's wrong, Yamato?
 
-50
-00:04:13,520 --> 00:04:16,360
+114
+00:07:50,870 --> 00:07:53,700
 I won't laugh!
 
-51
-00:04:17,240 --> 00:04:20,950
+115
+00:07:54,580 --> 00:07:58,290
 Those were the Pirate King's exact words!
 
-52
-00:04:20,950 --> 00:04:23,740
+116
+00:07:58,290 --> 00:08:01,090
 The very words that stunned Oden!
 
-53
-00:04:24,740 --> 00:04:29,960
+117
+00:08:02,090 --> 00:08:07,300
 In Kozuki Oden's journal, there was
 a great man who said the same thing!
 
-54
-00:04:29,960 --> 00:04:31,580
+118
+00:08:07,300 --> 00:08:08,930
 I'd never laugh at that!
 
-55
-00:04:31,580 --> 00:04:33,590
+119
+00:08:08,930 --> 00:08:10,930
 Your brother is incredible!
 
-56
-00:04:35,460 --> 00:04:37,090
+120
+00:08:12,810 --> 00:08:14,430
 A great man, huh?
 
-57
-00:04:37,090 --> 00:04:38,590
+121
+00:08:14,430 --> 00:08:15,930
 Good to hear!
 
-58
-00:04:38,590 --> 00:04:42,050
+122
+00:08:15,930 --> 00:08:19,400
 Maybe Luffy and I can grab
 a drink with him someday!
 
-59
-00:04:43,220 --> 00:04:45,260
+123
+00:08:20,560 --> 00:08:22,610
 I'm sure you guys would get along!
 
-60
-00:04:45,970 --> 00:04:47,230
+124
+00:08:23,320 --> 00:08:24,570
 But he's already dead.
 
-61
-00:04:47,230 --> 00:04:48,310
+125
+00:08:24,570 --> 00:08:25,650
 He is?!
 
-62
-00:04:49,850 --> 00:04:53,150
+126
+00:08:27,190 --> 00:08:30,490
 Well, in that case, it'd be hard to see him...
 
-63
-00:05:00,660 --> 00:05:01,410
+127
+00:08:31,700 --> 00:08:32,490
+Hey...
+
+128
+00:08:32,990 --> 00:08:34,490
+What do you want now?
+
+129
+00:08:35,120 --> 00:08:36,370
+Well...
+
+130
+00:08:36,370 --> 00:08:38,460
+How about me instead?
+
+131
+00:08:39,040 --> 00:08:42,290
+You, your brother, and me!
+
+132
+00:08:42,290 --> 00:08:45,050
+That is... if I'm able to set sail one day...
+
+133
+00:08:45,050 --> 00:08:46,670
+Sounds like fun!
+
+134
+00:08:46,670 --> 00:08:47,670
+Really?!
+
+135
+00:08:47,670 --> 00:08:50,680
+But you know how big
+the sea is, right, Yamato?
+
+136
+00:08:50,680 --> 00:08:54,430
+If you don't hurry, who knows
+if we'll ever see each other again–
+
+137
+00:08:54,430 --> 00:08:55,430
+Then, Ace,
+
+138
+00:08:55,430 --> 00:08:57,680
+could you please give me...
+
+139
+00:08:57,680 --> 00:08:59,480
+a strand of hair or a nail?
+
+140
+00:08:59,480 --> 00:09:00,770
+Huh?!
+
+141
+00:09:00,770 --> 00:09:03,270
+Either one will work!
+
+142
+00:09:03,270 --> 00:09:04,270
+Sure...
+
+143
+00:09:05,400 --> 00:09:06,570
+Huh?
+
+144
+00:09:11,820 --> 00:09:12,570
 It's done!
 
-64
-00:05:01,410 --> 00:05:02,070
+145
+00:09:12,570 --> 00:09:13,240
 Oh?
 
-65
-00:05:02,070 --> 00:05:04,030
+146
+00:09:13,240 --> 00:09:15,200
 This is your vivre card!
 
-66
-00:05:05,030 --> 00:05:06,790
+147
+00:09:16,200 --> 00:09:17,950
 This is it?
 
-67
-00:05:08,540 --> 00:05:10,120
+148
+00:09:19,710 --> 00:09:21,290
 It's just some paper.
 
-68
-00:05:10,750 --> 00:05:15,920
+149
+00:09:21,920 --> 00:09:27,090
 Yeah! But this piece of paper will
 bring us together again one day!
 
-69
-00:05:17,260 --> 00:05:22,090
+150
+00:09:27,090 --> 00:09:28,420
+Bring us together?
+
+151
+00:09:29,090 --> 00:09:29,970
+Watch!
+
+152
+00:09:35,220 --> 00:09:40,060
 Give a piece to anyone you want
 to keep track of or meet again.
 
-70
-00:05:22,760 --> 00:05:23,640
+153
+00:09:40,730 --> 00:09:41,600
 Okay!
 
-71
-00:05:23,640 --> 00:05:25,510
+154
+00:09:41,600 --> 00:09:43,480
 I'll be sure to do that.
 
-72
-00:05:45,370 --> 00:05:48,040
+155
+00:09:59,250 --> 00:10:00,660
+Yamato!
+
+156
+00:10:03,750 --> 00:10:05,880
+Don't go losing it!
+
+157
+00:10:22,270 --> 00:10:24,940
 Ace!
 
-73
-00:05:55,540 --> 00:05:57,210
+158
+00:10:32,440 --> 00:10:34,110
 Yamato?!
 
-74
-00:06:01,590 --> 00:06:03,680
+159
+00:10:38,490 --> 00:10:40,580
 We will meet again one day!
 
-75
-00:06:04,050 --> 00:06:06,640
+160
+00:10:40,950 --> 00:10:43,540
 Ace!
 
-76
-00:06:14,270 --> 00:06:16,270
+161
+00:10:51,170 --> 00:10:53,170
 You bet!
 
-77
-00:06:23,150 --> 00:06:24,160
+162
+00:11:00,060 --> 00:11:01,060
 In reality...
 
-78
-00:06:25,070 --> 00:06:27,120
+163
+00:11:01,970 --> 00:11:04,020
 that would be our final meeting.
 
-79
-00:06:35,420 --> 00:06:40,800
-I had no idea what was happening
-in the outside world that day,
+164
+00:11:13,070 --> 00:11:15,860
+That stupid son of mine is at it again...
 
-80
-00:06:41,420 --> 00:06:44,260
-but I read about it in the newspaper later.
+165
+00:11:15,860 --> 00:11:20,700
+Whatever. Thanks to Red Hair's little
+interruption, I have some time to kill.
 
-81
-00:06:44,760 --> 00:06:49,390
-I learned that Ace was the son of
-the Pirate King, Gol D. Roger...
+166
+00:11:21,160 --> 00:11:24,250
+I can deal with the brat's temper tantrum.
 
-82
-00:06:50,140 --> 00:06:54,850
-and that his younger brother
-had really made a name for himself!
+167
+00:11:28,460 --> 00:11:31,920
+You promised me... that you would return...!
 
-83
-00:06:55,520 --> 00:06:57,310
-That was the man you brought...
+168
+00:11:37,130 --> 00:11:39,850
+It doesn't matter what hope he clings on to.
 
-84
-00:06:58,650 --> 00:06:59,520
-Luffy!
+169
+00:11:55,860 --> 00:11:59,030
+He'll always be trapped...
 
-85
-00:07:01,780 --> 00:07:03,150
-Momonosuke.
+170
+00:11:59,030 --> 00:12:00,740
+on this island.
 
-86
-00:07:03,610 --> 00:07:06,570
-I return this to you, of course.
+171
+00:12:06,660 --> 00:12:09,210
+I can't get off of this island!
 
-87
-00:07:06,570 --> 00:07:10,660
-This is what Oden wrote about the future...
+172
+00:12:09,210 --> 00:12:12,670
+I can't beat my father!
 
-88
-00:07:19,840 --> 00:07:23,760
+173
+00:12:14,840 --> 00:12:17,550
+I can't go and rescue...
+
+174
+00:12:18,340 --> 00:12:21,260
+my one and only friend...!
+
+175
+00:12:22,010 --> 00:12:23,430
+I'm...
+
+176
+00:12:25,220 --> 00:12:27,350
+not free...
+
+177
+00:12:28,890 --> 00:12:31,310
+Why shackle your heart as well?!
+
+178
+00:12:32,560 --> 00:12:34,480
+I only want to...
+
+179
+00:12:34,480 --> 00:12:37,780
+live as free as Oden did...
+
+180
+00:12:38,780 --> 00:12:40,070
+Ace...
+
+181
+00:12:42,410 --> 00:12:45,790
 Twenty years from now,
 
-89
-00:07:28,050 --> 00:07:35,100
+182
+00:12:45,790 --> 00:12:52,000
 a group of young and powerful pirates
 shall start a new era in the New World!
 
-90
-00:07:36,730 --> 00:07:39,310
+183
+00:12:52,420 --> 00:12:56,510
+But the toughest one of all
+will set sail in a few years...
+
+184
+00:12:57,050 --> 00:12:59,220
+My kid brother!
+
+185
+00:13:03,800 --> 00:13:05,510
+Go home, Yamato.
+
+186
+00:13:07,600 --> 00:13:09,230
+I'll wait, too...
+
+187
+00:13:09,690 --> 00:13:12,560
+For whatever Kozuki Oden was waiting for...
+
+188
+00:13:13,190 --> 00:13:15,650
+Please come back, Young Master Yamato!
+
+189
+00:13:16,030 --> 00:13:18,780
+I'll wait for the new era...
+
+190
+00:13:18,780 --> 00:13:20,070
+for as long as it takes!
+
+191
+00:13:21,410 --> 00:13:22,780
+Luffy...
+
+192
+00:13:22,780 --> 00:13:24,740
+I'll be waiting for you!
+
+193
+00:13:24,740 --> 00:13:26,950
+I'll keep fighting until then!
+
+194
+00:13:28,450 --> 00:13:31,170
+If you still don't get it
+after how many times I've told you...
+
+195
+00:13:31,670 --> 00:13:35,500
+I'll just keep on beating it into you, Yamato!
+
+196
+00:13:35,500 --> 00:13:38,760
+And I'll keep beating this into you!
+
+197
+00:13:47,310 --> 00:13:48,970
+That's the spirit, Yamato!
+
+198
+00:13:48,970 --> 00:13:53,770
+I'm Oden, you rotten excuse for a father!
+
+199
+00:13:56,900 --> 00:14:02,280
+I had no idea what was happening
+in the outside world that day,
+
+200
+00:14:02,910 --> 00:14:05,740
+but I read about it in the newspaper later.
+
+201
+00:14:06,240 --> 00:14:10,870
+I learned that Ace was the son of
+the Pirate King, Gol D. Roger...
+
+202
+00:14:11,620 --> 00:14:16,340
+and that his younger brother
+had really made a name for himself!
+
+203
+00:14:16,340 --> 00:14:19,300
+That was Luffy, the man you brought!
+
+204
+00:14:21,170 --> 00:14:22,550
+Momonosuke.
+
+205
+00:14:24,260 --> 00:14:27,390
+I return this to you, of course.
+
+206
+00:14:28,760 --> 00:14:32,520
+This is what Oden wrote about the future...
+
+207
+00:14:36,020 --> 00:14:38,980
+"Twenty years from now,
+
+208
+00:14:42,950 --> 00:14:46,320
+a group of young and powerful pirates...
+
+209
+00:14:46,950 --> 00:14:49,200
+shall start a new era in the New World!
+
+210
+00:14:51,370 --> 00:14:53,290
 If I die before then...
 
-91
-00:07:43,230 --> 00:07:45,990
+211
+00:14:56,580 --> 00:14:59,920
+they will be the ones to strike down Kaido!"
+
+212
+00:15:03,630 --> 00:15:06,090
+The One Piece...
+
+213
+00:15:08,300 --> 00:15:14,480
+You guys shouldn't even dream of
+being a contender for that treasure...
+
+214
+00:15:18,440 --> 00:15:22,940
+When are you gonna stop
+pretending to be pirates?
+
+215
+00:15:22,940 --> 00:15:26,910
+You were always a lousy teacher, Kaido...
+
+216
+00:15:26,910 --> 00:15:28,320
+Just let me handle it!
+
+217
+00:15:34,080 --> 00:15:36,040
+Yeah, I know, Killer...
+
+218
+00:15:36,670 --> 00:15:39,380
+I get how you feel...
+
+219
+00:15:40,250 --> 00:15:42,880
+I've gathered a whole mountain of scrap!
+
+220
+00:15:46,300 --> 00:15:49,760
+Take it off my hands, you damn Emperors!
+
+221
+00:16:03,900 --> 00:16:05,650
+One after another!
+
+222
+00:16:05,650 --> 00:16:07,610
+So reckless...
+
+223
+00:16:07,610 --> 00:16:09,740
+Is your entire crew like that?
+
+224
+00:16:09,740 --> 00:16:12,620
+This wasn't my idea...!
+
+225
+00:16:12,620 --> 00:16:15,700
+I don't see the most reckless one...
+
+226
+00:16:15,700 --> 00:16:17,210
+Where's Straw Hat?
+
+227
+00:16:22,460 --> 00:16:24,210
+Now there's even more of them.
+
+228
+00:16:24,210 --> 00:16:26,590
+They're the Worst Generation, aren't they?
+
+229
+00:16:26,590 --> 00:16:30,640
+Whatever they are, they'll all
+scatter like dust in the wind...
+
+230
+00:16:33,850 --> 00:16:38,140
+None of you are strong enough
+to reopen this scar!
+
+231
+00:16:41,230 --> 00:16:45,940
+Slink away with your honor intact, rookies!
+
+232
+00:16:45,940 --> 00:16:48,950
+Like the Red Scabbards did...
+
+233
+00:16:58,870 --> 00:17:03,040
+Twenty years from now,
+
+234
+00:17:07,170 --> 00:17:14,220
+a group of young and powerful pirates
+shall start a new era in the New World!
+
+235
+00:17:15,850 --> 00:17:18,430
+If I die before then...
+
+236
+00:17:22,350 --> 00:17:25,110
 they will be the ones...
 
-92
-00:07:47,660 --> 00:07:49,620
+237
+00:17:26,780 --> 00:17:28,740
 to strike down Kaido!
 
-93
-00:07:50,240 --> 00:07:52,240
+238
+00:17:29,360 --> 00:17:31,360
 And here's another one...
 
-94
-00:07:52,240 --> 00:07:54,500
+239
+00:17:31,360 --> 00:17:33,620
 How about you sit back
 and watch how it's done?!
 
-95
-00:07:54,500 --> 00:07:55,710
+240
+00:17:33,620 --> 00:17:34,830
 I refuse!
 
-96
-00:07:55,000 --> 00:07:55,710
+241
+00:17:34,120 --> 00:17:34,830
 Same here!
 
-97
-00:07:56,370 --> 00:07:58,670
+242
+00:17:35,490 --> 00:17:37,790
 So many heads ripe for the taking!
 
-98
-00:08:01,250 --> 00:08:03,380
+243
+00:17:40,370 --> 00:17:42,500
 Straw Hat...
 
-99
-00:08:20,310 --> 00:08:21,560
+244
+00:17:59,430 --> 00:18:00,680
 Linlin!
 
-100
-00:08:21,560 --> 00:08:25,320
+245
+00:18:00,680 --> 00:18:04,440
 You wanna guess what this brat
 said he'd be, right to my face?!
 
-101
-00:08:25,320 --> 00:08:27,820
+246
+00:18:04,440 --> 00:18:06,940
 He sure is a cheeky one...
 
-102
-00:08:28,240 --> 00:08:31,820
+247
+00:18:07,360 --> 00:18:10,940
 He talked a big game to me too!
 
-103
-00:08:31,820 --> 00:08:35,450
+248
+00:18:10,940 --> 00:18:14,570
 He even destroyed my castle!
 
-104
-00:08:35,450 --> 00:08:38,960
+249
+00:18:14,570 --> 00:18:18,080
 I believe you owe me an apology, Straw Hat!
 
-105
-00:08:43,840 --> 00:08:45,380
+250
+00:18:22,960 --> 00:18:24,500
 Hey, punk...
 
-106
-00:08:45,840 --> 00:08:49,680
+251
+00:18:24,960 --> 00:18:28,800
 Tell us again what you said you'll be...
 
-107
-00:08:49,680 --> 00:08:54,600
+252
+00:18:28,800 --> 00:18:33,590
 Say it right to our faces!
 
-108
-00:09:05,150 --> 00:09:07,740
+253
+00:18:38,810 --> 00:18:42,060
+We are counting on you all.
+
+254
+00:18:44,690 --> 00:18:45,850
+Sir Luffy!
+
+255
+00:18:50,360 --> 00:18:52,320
+We are in your debt!
+
+256
+00:19:01,750 --> 00:19:04,330
 You alright, Kin'emon?
 
-109
-00:09:08,860 --> 00:09:11,160
+257
+00:19:05,460 --> 00:19:07,750
 I'm sorry...
 
-110
-00:09:12,200 --> 00:09:13,740
+258
+00:19:08,790 --> 00:19:10,340
 I took too long.
 
-111
-00:09:21,210 --> 00:09:23,630
+259
+00:19:17,800 --> 00:19:20,220
 I am... chagrined...
 
-112
-00:09:26,920 --> 00:09:28,880
+260
+00:19:23,520 --> 00:19:25,480
 A-Alas...
 
-113
-00:09:29,420 --> 00:09:31,220
+261
+00:19:26,020 --> 00:19:27,810
 when I pass on...
 
-114
-00:09:31,760 --> 00:09:35,930
+262
+00:19:28,360 --> 00:19:32,530
 I will have nothing to show
 Lord Oden but my shame!
 
-115
-00:09:37,310 --> 00:09:38,140
+263
+00:19:33,900 --> 00:19:34,740
 Kin'e–
 
-116
-00:09:40,480 --> 00:09:43,350
+264
+00:19:37,070 --> 00:19:39,950
 Would you carry...
 
-117
-00:09:44,730 --> 00:09:47,150
+265
+00:19:41,330 --> 00:19:43,750
 Wano upon your back?!
 
-118
-00:09:49,400 --> 00:09:50,030
+266
+00:19:46,000 --> 00:19:46,620
 I beg–
 
-119
-00:09:50,030 --> 00:09:51,150
+267
+00:19:46,620 --> 00:19:47,750
 Dummy!
 
-120
-00:09:51,150 --> 00:09:52,700
+268
+00:19:47,750 --> 00:19:49,290
 Of course I will!
 
-121
-00:09:54,200 --> 00:09:55,990
+269
+00:19:50,790 --> 00:19:52,590
 It's my friends' country!
 
-122
-00:10:02,580 --> 00:10:04,830
+270
+00:19:59,180 --> 00:20:01,430
 Hey, brat!
 
-123
-00:10:07,090 --> 00:10:08,170
+271
+00:20:03,680 --> 00:20:04,770
 Sir...
 
-124
-00:10:08,800 --> 00:10:10,090
+272
+00:20:05,390 --> 00:20:06,690
 Luffy...
 
-125
-00:10:11,260 --> 00:10:13,340
+273
+00:20:07,850 --> 00:20:09,940
 We are all in...
 
-126
-00:10:13,340 --> 00:10:14,430
+274
+00:20:09,940 --> 00:20:11,020
 your debt...
 
-127
-00:10:16,180 --> 00:10:16,970
+275
+00:20:12,770 --> 00:20:13,570
 Traffy!
 
-128
-00:10:16,970 --> 00:10:19,390
+276
+00:20:13,570 --> 00:20:15,990
 Send all of them downstairs!
 
-129
-00:10:24,650 --> 00:10:27,110
+277
+00:20:21,240 --> 00:20:23,700
 Why is it shaking again?!
 
-130
-00:10:27,690 --> 00:10:29,110
+278
+00:20:24,290 --> 00:20:25,700
 Luffy...
 
-131
-00:10:32,570 --> 00:10:38,030
+279
+00:20:29,170 --> 00:20:34,630
 You call it haki, but in Wano
 we refer to it as ryuo.
 
-132
-00:10:38,030 --> 00:10:40,910
+280
+00:20:34,630 --> 00:20:37,510
 It means "to flow."
 
-133
-00:10:40,910 --> 00:10:44,120
+281
+00:20:37,510 --> 00:20:40,720
 Lord Oden was executed!
 
-134
-00:10:44,120 --> 00:10:48,460
+282
+00:20:40,720 --> 00:20:45,060
 By the shogun of Wano and the pirate Kaido!
 
-135
-00:10:48,840 --> 00:10:51,090
+283
+00:20:45,430 --> 00:20:47,680
 Sir Raizo is safe!
 
-136
-00:10:51,090 --> 00:10:53,550
+284
+00:20:47,680 --> 00:20:50,150
 We'd never sell out our friends!
 
-137
-00:10:53,550 --> 00:10:56,510
+285
+00:20:50,150 --> 00:20:53,110
 Listen! You-gara must press on!
 
-138
-00:10:56,510 --> 00:11:00,850
+286
+00:20:53,110 --> 00:20:57,440
 The neighborly man of Ebisu Town
 is heading off to the great beyond!
 
-139
-00:11:00,760 --> 00:11:04,060
+287
+00:20:57,360 --> 00:21:00,660
 The fires of rebellion...
 Do they continue to burn?!
 
-140
-00:11:04,060 --> 00:11:06,100
+288
+00:21:00,660 --> 00:21:02,700
 All ships, to Onigashima!
 
-141
-00:11:06,100 --> 00:11:07,440
+289
+00:21:02,700 --> 00:21:04,030
 Charge!
 
-142
-00:11:09,900 --> 00:11:13,820
+290
+00:21:06,500 --> 00:21:10,420
 On the day Kaido killed
 Oden twenty years ago...
 
-143
-00:11:13,820 --> 00:11:16,240
+291
+00:21:10,420 --> 00:21:12,830
 this country stopped moving forward!
 
-144
-00:11:16,240 --> 00:11:19,370
+292
+00:21:12,830 --> 00:21:15,960
 No one deserves to be
 laughed at when they die.
 
-145
-00:11:19,370 --> 00:11:22,660
+293
+00:21:15,960 --> 00:21:19,260
 What's wrong with a stranger
 defending this land?!
 
-146
-00:11:22,660 --> 00:11:25,160
+294
+00:21:19,260 --> 00:21:21,760
 You say it! Aren't you an important person?!
 
-147
-00:11:25,160 --> 00:11:28,540
+295
+00:21:21,760 --> 00:21:25,140
 You're the leader of these
 great men, aren't you?!
 
-148
-00:11:28,540 --> 00:11:32,710
+296
+00:21:25,140 --> 00:21:29,310
 I want to defeat Kaido!
 
-149
-00:11:38,220 --> 00:11:41,720
+297
+00:21:34,820 --> 00:21:38,320
 Gum-Gum...
 
-150
-00:11:45,230 --> 00:11:46,600
+298
+00:21:41,820 --> 00:21:43,200
 Red...
 
-151
-00:11:47,940 --> 00:11:48,650
+299
+00:21:44,530 --> 00:21:45,240
 Roc!
 
-152
-00:12:12,040 --> 00:12:14,670
+300
+00:22:08,640 --> 00:22:11,270
 Hey, Kaido! What are you doing?!
 
-153
-00:12:14,670 --> 00:12:18,090
+301
+00:22:11,270 --> 00:22:14,690
 How the hell did he knock you down?!
 
-154
-00:12:20,800 --> 00:12:23,760
+302
+00:22:17,400 --> 00:22:20,360
 I'm Monkey D. Luffy.
 
-155
-00:12:24,430 --> 00:12:26,680
+303
+00:22:21,030 --> 00:22:23,280
 The man who's gonna surpass you both...
 
-156
-00:12:29,650 --> 00:12:32,610
+304
+00:22:26,240 --> 00:22:29,200
 and become the King of the Pirates!
